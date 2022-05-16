@@ -1,0 +1,16 @@
+{
+    "name": "softcommerce/mage2plenty-ce",
+    "description": "PlentyMarkets Connector for Magento community edition. Bundle package includes Core, Customer, Item, Order and Stock modules.",
+    "type": "metapackage",
+    "license": "EULA",
+    "require": {
+        "php": "~7.2.0||~7.3.0||~7.4.0",
+        "ext-curl": "*",
+        "plenty/module-core": "*",
+        "plenty/module-customer": "*",
+        "plenty/module-item": "*",
+        "plenty/module-order": "*",
+        "plenty/module-stock": "*"
+    },
+    "version": "1.3.4"
+}
