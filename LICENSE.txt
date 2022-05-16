@@ -20,7 +20,7 @@
 *                                                                               *
 * @category  SoftCommerce                                                       *
 * @package   SoftCommerce\Mage2PlentyOpenSource                                 *
-* @copyright © 2021 Soft Commerce Ltd. All Rights Reserved.                     *
+* @copyright © 2022 Soft Commerce Ltd. All Rights Reserved.                     *
 * @link      https://softcommerce.com                                           *
 * @license   https://softcommerce.co.uk/pub/license/index.html                  *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
