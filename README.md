@@ -12,8 +12,8 @@ Metapackage of bundled modules.
 Run the following command from Magento root directory:
 
 ```
-composer config repositories.softcommerce-mage2plenty-ce vcs https://github.com/softcommerceltd/mage2plenty-open-source.git
-composer require softcommerce/mage2plenty-ce
+composer config repositories.softcommerce-mage2plenty-os vcs https://github.com/softcommerceltd/mage2plenty-open-source.git
+composer require softcommerce/mage2plenty-os
 ```
 If you receive an error regarding any incompatibility - use --ignore-platform-reqs
 ```
