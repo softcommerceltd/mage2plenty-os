@@ -23,6 +23,7 @@
         "softcommerce/module-plenty-item-profile": "*",
         "softcommerce/module-plenty-item-profile-schedule": "*",
         "softcommerce/module-plenty-item-rest-api": "*",
+        "softcommerce/module-plenty-log": "*",
         "softcommerce/module-plenty-order": "*",
         "softcommerce/module-plenty-order-client": "*",
         "softcommerce/module-plenty-order-profile": "*",
@@ -43,5 +44,5 @@
         "softcommerce/module-profile-history": "*",
         "softcommerce/module-profile-schedule": "*"
     },
-    "version": "1.0.0"
+    "version": "1.0.1"
 }
