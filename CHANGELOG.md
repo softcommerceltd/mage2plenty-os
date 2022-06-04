@@ -1,7 +1,7 @@
 ## Changelog
 
 ### Version 1.0.1
-- **Feature**: [M2PM2-102] New module to handle Plenty Log services.
+- **Compatibility**: Compatibility with Magento Open Source 2.3.5 - 2.4.3
 
 ### Version 1.0.0
-- **Compatibility**: Compatibility with Magento Open Source 2.3.5 - 2.4.3
+- **Feature**: [M2PM2-102] New module to handle Plenty Log services.
