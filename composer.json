@@ -1,6 +1,6 @@
 {
     "name": "softcommerce/mage2plenty-os",
-    "description": "Bundle package of PlentyMarkets connector for Magento Open source.",
+    "description": "Bundle package of PlentyMarkets connector for Magento Open Source.",
     "type": "metapackage",
     "license": "EULA",
     "require": {
@@ -16,9 +16,9 @@
         "softcommerce/module-plenty-customer": "1.1.2",
         "softcommerce/module-plenty-customer-client": "1.0.1",
         "softcommerce/module-plenty-customer-rest-api": "1.0.0",
-        "softcommerce/module-plenty-item": "1.3.5",
+        "softcommerce/module-plenty-item": "1.3.6",
         "softcommerce/module-plenty-item-client": "1.0.1",
-        "softcommerce/module-plenty-item-profile": "1.0.1",
+        "softcommerce/module-plenty-item-profile": "1.0.2",
         "softcommerce/module-plenty-item-profile-schedule": "1.0.1",
         "softcommerce/module-plenty-item-rest-api": "1.0.0",
         "softcommerce/module-plenty-log": "1.0.1",
@@ -27,7 +27,7 @@
         "softcommerce/module-plenty-order-profile": "1.0.0",
         "softcommerce/module-plenty-order-profile-schedule": "1.0.0",
         "softcommerce/module-plenty-order-rest-api": "1.0.0",
-        "softcommerce/module-plenty-profile": "1.0.0",
+        "softcommerce/module-plenty-profile": "1.0.1",
         "softcommerce/module-plenty-property": "1.0.0",
         "softcommerce/module-plenty-property-rest-api": "1.0.0",
         "softcommerce/module-plenty-rest-api": "1.0.0",
@@ -42,5 +42,5 @@
         "softcommerce/module-profile-history": "1.0.0",
         "softcommerce/module-profile-schedule": "1.0.0"
     },
-    "version": "1.0.1"
+    "version": "1.0.2"
 }
