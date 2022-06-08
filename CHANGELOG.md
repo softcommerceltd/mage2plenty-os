@@ -1,5 +1,8 @@
 ## Changelog
 
+### Version 1.2.0
+- **Compatibility**: Compatibility with Magento Open Source 2.4.4 [#4]
+
 ### Version 1.0.2
 - **Enhancement**: Changes to [softcommerce/module-plenty-item]
 - **Enhancement**: Changes to [softcommerce/module-plenty-profile]
