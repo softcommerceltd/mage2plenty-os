@@ -42,5 +42,5 @@
         "softcommerce/module-profile-history": "~1.1.0",
         "softcommerce/module-profile-schedule": "~1.1.0"
     },
-    "version": "1.1.0"
+    "version": "1.0.1"
 }
