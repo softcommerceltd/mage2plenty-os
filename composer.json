@@ -40,7 +40,8 @@
         "softcommerce/module-profile": "*",
         "softcommerce/module-profile-config": "*",
         "softcommerce/module-profile-history": "*",
+        "softcommerce/module-profile-queue": "*",
         "softcommerce/module-profile-schedule": "*"
     },
-    "version": "1.2.1"
+    "version": "1.2.2"
 }
