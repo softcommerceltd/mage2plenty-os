@@ -4,7 +4,7 @@
     "type": "metapackage",
     "license": "EULA",
     "require": {
-        "softcommerce/module-core": "~1.1.0",
+        "softcommerce/module-core": "1.1.6",
         "softcommerce/module-plenty-attribute": "*",
         "softcommerce/module-plenty-attribute-rest-api": "*",
         "softcommerce/module-plenty-category": "*",
