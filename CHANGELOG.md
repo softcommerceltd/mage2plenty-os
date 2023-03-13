@@ -1,5 +1,8 @@
 ## Changelog
 
+### Version 1.2.4
+- **Compatibility**: Added compatibility PHP 8.[0,1] and Magento 2.4.6 [CE/EE/ECE].
+
 ### Version 1.2.3
 - **Compatibility**: Compatibility with Magento [OS/AC] 2.4.5 and PHP 8.
 
