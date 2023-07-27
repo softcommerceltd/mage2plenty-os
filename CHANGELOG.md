@@ -23,7 +23,7 @@
 
 ### Version 1.3.0
 - **Enhancement**: Added an option to provide custom database columns in `SoftCommerce\Core\Model\Utils\SkuStorageInterface`
-  model that's used to retrieve product entity data in array format.
+model that's used to retrieve product entity data in array format.
 
 ### Version 1.2.9
 - **Fix**: Applied a fix to license compatibility.
@@ -255,7 +255,7 @@
 
 ### Version 1.2.6
 - **Fix**: Applied a fix to `Invalid Form Key. Please refresh the page.` during saving client connection configuration
-  in `SoftCommerce > PlentyMarkets > Manage Client Connection`
+in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 - **Compatibility**: Compatibility with Magento [CE/EE/ECE] 2.4.5 and PHP 8
 
 ### Version 1.2.5
@@ -592,7 +592,7 @@
 - **Feature**: [M2PI-32] Add image support for variation entities.
 - **Fix**: Added a fix to database schema setup, where foreign keys failed to remove from tables which were subject to deletion.
 - **Fix**: Added a fix to configurable product import where associated item import failed due to being created after initial import.
-- **Fix**: Added a fix to property selection values where values with "0" content where not exported due to bing considered as false value ("0").
+- **Fix**: Added a fix to property selection values where values with "0" content where not exported due to bing considered as false value ("0"). 
 - **Feature**: Added media image filter for product import. Filter includes client store, referrers and listing.
 - **Feature**: Added product relation links, such as: `Cross Sells`, `Up Sells` and `Related items`;
 - **Feature**: [M2PI-40] Collect items after initial profile installation.
@@ -633,7 +633,7 @@
 - **Fix**: Apply an alternative means of retrieving array key in favour of array_key_first.
 - **Fix**: Added a fix to property group assignment.
 - **Feature**: Added ability to export property type `price` (float).
-- **Fix**: Added a fix to `product image export` by employing md5_checksum to all images saved outside of PM connector (that is by 3rd party extensions or within Magento admin).
+- **Fix**: Added a fix to `product image export` by employing md5_checksum to all images saved outside of PM connector (that is by 3rd party extensions or within Magento admin).  
 - **Improvement**: Added `weight conversion` to product import / export.
 - **Fix**: Added a fix to `product price export`. A website ID is added to price mapping.
 - **Improvement**: Added `md5_checksum` column to `catalog_product_entity_media_gallery` in order to sign existing images and fix duplicate image issue during product import.
@@ -722,10 +722,10 @@
 
 ### Version 1.4.9
 - **Enhancement**: Changes to attribute set ID generation during product import,
-  where attribute set ID is pulled from existing product if one exists,
-  alternatively the attribute set ID is retrieved from attribute set mapping.
+where attribute set ID is pulled from existing product if one exists,
+alternatively the attribute set ID is retrieved from attribute set mapping.
 - **Fix**: Applied a fix to import of attribute values that are based on multi-store / multi-lang relations,
-  where identical values from default scope were used in other stores, resulting in values having "Use Default Value" box unticked.
+where identical values from default scope were used in other stores, resulting in values having "Use Default Value" box unticked.
 - **Compatibility**: Compatibility with Magento [CE/EE/ECE] 2.4.5 and PHP 8
 
 ### Version 1.4.8
@@ -865,7 +865,7 @@
 
 ### Version 1.2.7
 - **Fix**: Applied a fix for item collect process to reduce the number of IDs proved for search criteria due to the following error:
-  `414 Request-URI Too Large /rest/pim/variations` [#1]
+`414 Request-URI Too Large /rest/pim/variations` [#1]
 
 ### Version 1.2.6
 - **Compatibility**: Compatibility with Magento [OS/AC] 2.4.5 and PHP 8
@@ -953,6 +953,9 @@
 
 # Package: softcommerce/module-plenty-order
 
+### Version 1.3.6
+- **Feature**: Add custom payment method for internal payment import used for external orders that have no payments. [#3]
+
 ### Version 1.3.5
 - **Enhancement**: Changed console command names for better reading.
 
@@ -970,7 +973,7 @@
 
 ### Version 1.3.0
 - **Fix**: Applied a fix to database declarative schema setup, where column type xsi="json" is not support in MySQL 8 engine. Error trace: Module 'Magento_SalesArchive':
-  Running schema recurring...Warning: Undefined array key "" in vendor/magento/framework/Setup/SchemaListener.php on line 137
+Running schema recurring...Warning: Undefined array key "" in vendor/magento/framework/Setup/SchemaListener.php on line 137
 
 ### Version 1.2.9
 - **Feature**: Added an option to create a credit note from a parent order in PlentyMarkets (order export). [#3]
@@ -1072,7 +1075,7 @@
 - **Improvement**: [M2PO-14] Order import - missed schedules for order import
 - **Feature**: [M2PO-17] Shipping profile mapping.
 - **Feature**: [M2PO-3] Implement order cancellation functionality for order import / export.
-- **Fix**: Applied a fix to manual order import since wrong argument was passed to search criteria.
+- **Fix**: Applied a fix to manual order import since wrong argument was passed to search criteria. 
 - **Fix**: Applied a fix to order locking to allow import / export with search criteria applied.
 - **Fix**: Removed `DateTimeLocaleInterfaceFactory` instance initialization at constructor level and moved over to `SoftCommerce\PlentyOrder\Console\Command\AbstractCommand::executeBefore`.
 
@@ -1080,7 +1083,7 @@
 - **Fix**: Added a fix to `SoftCommerce\PlentyOrder\Console\Command\AbstractCommand` to incorporate factory class `DateTimeLocaleInterfaceFactory` in order to make it installable during Magento initial installation.
 - **Fix**: Remove an unnecessary comma from within `unset()` function in `SoftCommerce\PlentyOrder\Profile\Service\OrderExport\Processor\Address::getIsShippingSameAsBilling`.
 - **Improvement**: Introduced locking for orders in processing state.
-- **Feature**: Added date filter to order import on the profile configuration level.
+- **Feature**: Added date filter to order import on the profile configuration level. 
 - **Compatibility**: Added compatibility with Magento 2.4.2
 - **Improvement**: Added mass import option from sales order grid to import orders in bulk.
 - **Improvement**: Changed logics of order import. Orders are now collected to DB first and processed from therein afterwards. This ensures no missed orders from client end.
@@ -1109,7 +1112,7 @@
 - **Compatibility**: Changes to composer.json
 - **Feature**: Added condition to create order invoices by document presence.
 - **Fix**: Added a fix to database schema setup, where foreign keys failed to remove from tables which were subject to deletion.
-- **Fix**: Applied a fix to date filter for order import collection;
+- **Fix**: Applied a fix to date filter for order import collection; 
 - **Compatibility**: Added compatibility for Magento Commerce.
 - **Feature**: Added coupon promotion to order export.
 - **Feature**: Added an option to create order property.
@@ -1175,6 +1178,9 @@
 
 # Package: softcommerce/module-plenty-order-profile
 
+### Version 1.6.0
+- **Enhancement**: An option to allow applying promotion discount to order line items. [#18]
+
 ### Version 1.5.9
 - **Fix**: Fix order item export for configurable products with no children items. #17
 
@@ -1219,7 +1225,7 @@
 
 ### Version 1.4.6
 - **Fix**: Call to a member function setBasePrice() on string#0 `vendor/softcommerce/module-plenty-order-profile/Model/OrderImportService/Generator/QuoteItem.php(263)`,
-  since adding product to quote returns string in case of an error.
+since adding product to quote returns string in case of an error.
 
 ### Version 1.4.5
 - **Enhancement**: Added new process chain validation to exclude order export by store mapping.
@@ -1247,11 +1253,11 @@
 
 ### Version 1.3.8
 - **Enhancement**: Converted private method to public: `\SoftCommerce\PlentyOrderProfile\Model\OrderExportService\Generator\Order\Items\Item::getPlentyVariationId()`
-  in order to allow interception by other modules.
+in order to allow interception by other modules.
 
 ### Version 1.3.7
 - **Enhancement**: Improvements to shipping import, where new public methods were added to allow extending
-  the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderImportService\Processor\Shipment` class.
+the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderImportService\Processor\Shipment` class.
 
 ### Version 1.3.6
 - **Compatibility**: Compatibility with the latest updates to `SoftCommerce_PlentyProfile`
@@ -1260,7 +1266,7 @@
 - **Compatibility**: Compatibility with Magento 2.4.5 & PHP 8.
 - **Fix**: Applied a fix to order export, where duplicate orders were created due to empty response from PM server which resulted in re-submission of orders upon error.
 - **Fix**: Applied a fix to order property for payment method ID that resulted in wrong payment method being re-assigned to order upon update.
-- **Fix**: Applied a fix to payment export, where payment wasn't assigned an ID for contact_relation_id.
+- **Fix**: Applied a fix to payment export, where payment wasn't assigned an ID for contact_relation_id. 
 
 ### Version 1.3.4
 - **Fix**: Applied a fix to missing item name. Ref: main.ERROR: {"error":{"message":"validation error found"},"validation_errors":{"orderItems.1.orderItemName":["The order items.1.order item name must be a string."]}}
@@ -1508,7 +1514,7 @@
 - **Enhancement**: Improvements to ACL rules.
 
 ### Version 1.2.5
-- **Fix**: Handle throttling, when short period read call is exhausted.
+- **Fix**: Handle throttling, when short period read call is exhausted. 
 
 ### Version 1.2.4
 - **Enhancement**: Implement item / variation PIM collect service scrolled by cursor in order to overcome item / variation result limit.
@@ -1580,7 +1586,7 @@
 - **Feature**: [M2PS-3] Add SKU filter to inventory grid.
 - **Feature**: [M2PS-2] Implement stock item scheduler using message queue.
 - **Feature**: [M2PS-1] Create profile entity configuration for stock.
-- **Improvement**: [M2PS-6] Stock reservation improvement.
+- **Improvement**: [M2PS-6] Stock reservation improvement.    
 - **Improvement**: [M2PS-4] Stock Import ::: Stock improvement.
 - **Improvement**: Added item `source_code` to inventory_reservation.metadata in order to manage reservations by a warehouse and its source.
 - **Coding Standards**: PSR-1 and PSR-2 compliance.
@@ -1733,9 +1739,9 @@
 
 ### Version 1.2.8
 - **Enhancement**: Changed stock import handler from `\Magento\InventoryReservationsApi\Model\AppendReservationsInterface::execute`
-  to `\Magento\InventoryReservations\Model\ResourceModel\SaveMultiple::execute` due to cached stock configuration data
-  in `\Magento\InventorySales\Plugin\InventoryReservationsApi\PreventAppendReservationOnNotManageItemsInStockPlugin::aroundExecute`
-  that prevents from reservation save process. `#1`
+to `\Magento\InventoryReservations\Model\ResourceModel\SaveMultiple::execute` due to cached stock configuration data
+in `\Magento\InventorySales\Plugin\InventoryReservationsApi\PreventAppendReservationOnNotManageItemsInStockPlugin::aroundExecute`
+that prevents from reservation save process. `#1`
 
 ### Version 1.2.7
 - **Compatibility**: Compatibility with the latest updates to `SoftCommerce_PlentyClient`
