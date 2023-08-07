@@ -115,6 +115,9 @@ model that's used to retrieve product entity data in array format.
 
 # Package: softcommerce/module-plenty-category
 
+### Version 1.2.7
+- **Enhancement**: Add an event observer `catalog_category_delete_after` to handle deleted categories [#1]
+
 ### Version 1.2.6
 - **Enhancement**: Changed console command names for better reading.
 
@@ -143,6 +146,12 @@ model that's used to retrieve product entity data in array format.
 - **Feature**: [M2PCAT-1] New module to handle category entity.
 
 # Package: softcommerce/module-plenty-category-profile
+
+### Version 1.3.6
+- **Fix**: Fix category path for category import with profiles that have no category mapping defined. [#4]
+- **Fix**: Add category URL Key to the import if one doesn't exist in the reqeust data. [#3]
+- **Fix**: Add category name to the import if one doesn't exist in the request data. [#2]
+- **Fix**: Retrieve a correct locale category name during data collection [#1]
 
 ### Version 1.3.5
 - **Enhancement**: Changed console command names for better reading.
@@ -1178,6 +1187,9 @@ Running schema recurring...Warning: Undefined array key "" in vendor/magento/fra
 
 # Package: softcommerce/module-plenty-order-profile
 
+## Version 1.6.1
+- **Fix**: Apply a fix to the setup of data patch for SoftCommerce\PlentyOrderProfile\Setup\Patch\Data\ChangeOrderLineItemConfigPath [#19]
+
 ### Version 1.6.0
 - **Enhancement**: An option to allow applying promotion discount to order line items. [#18]
 
@@ -1536,6 +1548,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PM2-99] New module to handle client REST API.
 
 # Package: softcommerce/module-plenty-stock
+
+### Version 1.3.1
+- **Enhancement**: CLI option to retrieve product saleable qty per stock and/or source code. [#2]
 
 ### Version 1.3.0
 - **Fix**: Could not process order. [Order: ***, Reason: No destination address was provided in the request] #1
