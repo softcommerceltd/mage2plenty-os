@@ -4,7 +4,7 @@
     "type": "metapackage",
     "license": "EULA",
     "require": {
-        "softcommerce/module-core": "1.3.6",
+        "softcommerce/module-core": "1.3.7",
         "softcommerce/module-plenty-attribute": "1.2.6",
         "softcommerce/module-plenty-attribute-rest-api": "1.2.3",
         "softcommerce/module-plenty-category": "1.2.7",
@@ -25,7 +25,7 @@
         "softcommerce/module-plenty-log": "1.2.4",
         "softcommerce/module-plenty-order": "1.3.6",
         "softcommerce/module-plenty-order-client": "1.2.8",
-        "softcommerce/module-plenty-order-profile": "1.6.1",
+        "softcommerce/module-plenty-order-profile": "1.6.2",
         "softcommerce/module-plenty-order-profile-schedule": "1.2.9",
         "softcommerce/module-plenty-order-rest-api": "1.2.6",
         "softcommerce/module-plenty-profile": "1.3.1",
@@ -44,5 +44,5 @@
         "softcommerce/module-profile-queue": "1.0.6",
         "softcommerce/module-profile-schedule": "1.3.1"
     },
-    "version": "1.2.6"
+    "version": "1.2.7"
 }

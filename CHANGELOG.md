@@ -2,6 +2,9 @@
 
 # Package: softcommerce/module-core
 
+### Version 1.3.7
+- **Enhancement**: Add a custom field heading for system configuration. [#1]
+
 ### Version 1.3.6
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1 #2
 
@@ -1186,6 +1189,9 @@ Running schema recurring...Warning: Undefined array key "" in vendor/magento/fra
 - **Feature**: [M2PO-55] New module to handle order client entity.
 
 # Package: softcommerce/module-plenty-order-profile
+
+## Version 1.6.2
+- **Fix**: Could not process order: validation_errors: {"discount":["Not a (strict) numeric value."]} [#20]
 
 ## Version 1.6.1
 - **Fix**: Apply a fix to the setup of data patch for SoftCommerce\PlentyOrderProfile\Setup\Patch\Data\ChangeOrderLineItemConfigPath [#19]
