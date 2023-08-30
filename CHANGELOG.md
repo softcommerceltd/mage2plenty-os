@@ -255,6 +255,9 @@ model that's used to retrieve product entity data in array format.
 
 # Package: softcommerce/module-plenty-client
 
+### Version 1.3.0
+- **Enhancement**: New functionality to manage client tokens via CLI [#1]
+
 ### Version 1.2.9
 - **Enhancement**: Changed console command names for better reading.
 
@@ -463,6 +466,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 - **Feature**: [M2PC-26] New module to handle customer REST API requests.
 
 # Package: softcommerce/module-plenty-item
+
+### Version 1.3.8
+- **Enhancement**: Remove deleted constant PROCESSED_AT from SoftCommerce\PlentyItem\Model\ResourceModel\Item\Collection [#3]
 
 ### Version 1.3.7
 - **Enhancement**: Changed console command names for better reading.
@@ -1190,6 +1196,11 @@ Running schema recurring...Warning: Undefined array key "" in vendor/magento/fra
 
 # Package: softcommerce/module-plenty-order-profile
 
+## Version 1.6.3
+- **Enhancement**: Handle duplicate client payment hash while re-creating payments in PM [#23]
+- **Feature**: New CLI functionality to delete client order payments externally [#22]
+- **Feature**: New CLI functionality to delete client orders externally [#21]
+
 ## Version 1.6.2
 - **Fix**: Could not process order: validation_errors: {"discount":["Not a (strict) numeric value."]} [#20]
 
@@ -1394,6 +1405,13 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-order-rest-api
 
+### Version 1.2.7
+- **Enhancement**: Handle empty response for SoftCommerce\PlentyOrderRestApi\Model\Payment\RelationInterface [#5]
+- **Enhancement**: Handle empty response for \SoftCommerce\PlentyOrderRestApi\Model\PaymentInterface::delete [#4]
+- **Enhancement**: Add ID search criteria to SoftCommerce\PlentyOrderRestApi\Model\PaymentInterface::getList [#3]
+- **Enhancement**: Add bulk payment URI for SoftCommerce\PlentyOrderRestApi\Model\Uri\Payment [#2]
+- **Enhancement**: Handle empty response for SoftCommerce\PlentyOrderRestApi\Model\OrderInterface::delete [#1]
+
 ### Version 1.2.6
 - **Enhancement**: Added new payment properties to REST API search criteria.
 
@@ -1512,6 +1530,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PP-1] New module to handle property REST API requests.
 
 # Package: softcommerce/module-plenty-rest-api
+
+### Version 1.3.2
+- **Enhancement**: Handle empty client response for \SoftCommerce\PlentyRestApi\Model\HttpClient\Curl::unserializeData [#1]
 
 ### Version 1.3.1
 - **Compatibility**: Added compatibility with Magento [CE|EE|ECE] 2.4.6.
