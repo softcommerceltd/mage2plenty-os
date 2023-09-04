@@ -1196,6 +1196,10 @@ Running schema recurring...Warning: Undefined array key "" in vendor/magento/fra
 
 # Package: softcommerce/module-plenty-order-profile
 
+## Version 1.6.4
+- **Enhancement**: Improve messages for shipment import from PM to Magento [#25]
+- **Enhancement**: Handle order and contact relations for existing payments. [#24]
+
 ## Version 1.6.3
 - **Enhancement**: Handle duplicate client payment hash while re-creating payments in PM [#23]
 - **Feature**: New CLI functionality to delete client order payments externally [#22]
