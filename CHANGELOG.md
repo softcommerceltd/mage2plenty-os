@@ -422,12 +422,15 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-customer-profile
 
+### Version 1.0.6
+- **Enhancement**: Handle contacts that are not found during contact address relation export. [#4]
+
 ### Version 1.0.5
-- **Fix**: Could not process order. [Order: ****, Reason: Invalid data for insert] #3
-- **Fix**: Apply a fix to contact deletion process when entities are not found on the system. #2
+- **Fix**: Could not process order. [Order: ****, Reason: Invalid data for insert] [#3]
+- **Fix**: Apply a fix to contact deletion process when entities are not found on the system. [#2]
 
 ### Version 1.0.4
-- **Fix**: Wrong address email being sent to PM #1
+- **Fix**: Wrong address email being sent to PM [#1]
 
 ### Version 1.0.3
 - **Enhancement**: Converted protected methods to public to allow interception of `SoftCommerce\PlentyCustomerProfile\Model\CustomerExportService\Generator\Address` by other vendors.
@@ -971,6 +974,10 @@ where identical values from default scope were used in other stores, resulting i
 
 # Package: softcommerce/module-plenty-order
 
+### Version 1.3.7
+- **Feature**: New method in SoftCommerce\PlentyOrder\Api\Data\OrderInterface to check if an order has child orders with Type ID: Delivery. [#5]
+- **Feature**: New method in SoftCommerce\PlentyOrder\Api\Data\OrderInterface to retrieve order item by a property value. [#4]
+
 ### Version 1.3.6
 - **Feature**: Add custom payment method for internal payment import used for external orders that have no payments. [#3]
 
@@ -1195,6 +1202,14 @@ Running schema recurring...Warning: Undefined array key "" in vendor/magento/fra
 - **Feature**: [M2PO-55] New module to handle order client entity.
 
 # Package: softcommerce/module-plenty-order-profile
+
+## Version 1.6.6
+- **Enhancement**: Improvements to SoftCommerce\PlentyOrderProfile\Model\OrderImportService\Generator::Shipment [#29]
+- **Enhancement**: Improved cache storage for SoftCommerce\PlentyOrderProfile\Model\Utils\OrderItemVariationDataStorage::getVariationId [#28]
+- **Enhancement**: Order item variation ID isn't assigned to order line item upon request. Create a workaround to use item property to assign Magento's item ID. [#26]
+
+## Version 1.6.5
+- **Fix**: Fix order line item discount where discount should by divided by qty [#27]
 
 ## Version 1.6.4
 - **Enhancement**: Improve messages for shipment import from PM to Magento [#25]
@@ -1535,6 +1550,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-rest-api
 
+### Version 1.3.3
+- **Enhancement**: Add public constants for client HTTP query messages. 
+
 ### Version 1.3.2
 - **Enhancement**: Handle empty client response for \SoftCommerce\PlentyRestApi\Model\HttpClient\Curl::unserializeData [#1]
 
@@ -1579,6 +1597,10 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PM2-99] New module to handle client REST API.
 
 # Package: softcommerce/module-plenty-stock
+
+### Version 1.3.2
+- **Enhancement**: Removed deprecated class SoftCommerce\PlentyStock\Model\QueueManagement [#4]
+- **Enhancement**: Removed class SoftCommerce\PlentyStock\Model\Queue [#3]
 
 ### Version 1.3.1
 - **Enhancement**: CLI option to retrieve product saleable qty per stock and/or source code. [#2]
@@ -1857,6 +1879,9 @@ that prevents from reservation save process. `#1`
 - **Feature**: [M2PO-55] New module to handle stock rest api entity.
 
 # Package: softcommerce/module-profile
+
+### Version 1.3.3
+- **Enhancement**: Applied changes to the styles for message text colours. [#1]
 
 ### Version 1.3.2
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1
