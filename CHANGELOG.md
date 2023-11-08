@@ -75,8 +75,14 @@ model that's used to retrieve product entity data in array format.
 
 # Package: softcommerce/module-plenty-attribute
 
+### Version 1.2.8
+- **Fix**: Operator is not allowed in this criteria class [#2]
+
+### Version 1.2.7
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 [#1]
+
 ### Version 1.2.6
-- **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1 #2
+- **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1
 
 ### Version 1.2.5
 - **Compatibility**: Added compatibility PHP 8.[0,1] and Magento 2.4.6.
@@ -150,6 +156,9 @@ model that's used to retrieve product entity data in array format.
 
 # Package: softcommerce/module-plenty-category-profile
 
+### Version 1.3.7
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 [#5]
+
 ### Version 1.3.6
 - **Fix**: Fix category path for category import with profiles that have no category mapping defined. [#4]
 - **Fix**: Add category URL Key to the import if one doesn't exist in the reqeust data. [#3]
@@ -160,10 +169,10 @@ model that's used to retrieve product entity data in array format.
 - **Enhancement**: Changed console command names for better reading.
 
 ### Version 1.3.4
-- **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1 #2
+- **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1
 
 ### Version 1.3.3
-- **Compatibility**: Added compatibility PHP 8.[0,1].
+- **Compatibility**: Added compatibility PHP 8.1.
 
 ### Version 1.3.2
 - **Compatibility**: Added compatibility with `SoftCommerce_PlentyCategoryProfileStaging` module that covers extended functionality with Adobe Commerce EE and ECE.
@@ -703,8 +712,13 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-item-profile
 
+### Version 1.5.11
+- **Fix**: Validation error found: attribute values do not match the other variations [#13]
+- **Fix**: Validation error found: The variation categories field is required [#12]
+- **Fix**: Argument #1 ($filePath) must be of type string, null given in SoftCommerce\PlentyItemProfile\Model\Utils\FileImageManagement::getImageMd5Checksum() [#10]
+
 ### Version 1.5.10
-- **Fix**: SoftCommerce\PlentyItemProfile\Model\Utils\MediaManagement::getLastMediaPosition(): Argument #1 ($productId) must be of type int, null given #9
+- **Fix**: SoftCommerce\PlentyItemProfile\Model\Utils\MediaManagement::getLastMediaPosition(): Argument #1 ($productId) must be of type int, null given [#9]
 
 ### Version 1.5.9
 - **Enhancement**: Video won't import since property not found due to code having whitespaces. [#8]
@@ -1202,6 +1216,9 @@ Running schema recurring...Warning: Undefined array key "" in vendor/magento/fra
 - **Feature**: [M2PO-55] New module to handle order client entity.
 
 # Package: softcommerce/module-plenty-order-profile
+
+## Version 1.6.7
+- **Enhancement**: Improvements to SoftCommerce\PlentyOrderProfile\Model\OrderExportService\Generator\Order\Items\Item::isSimpleLineItem [#31]
 
 ## Version 1.6.6
 - **Enhancement**: Improvements to SoftCommerce\PlentyOrderProfile\Model\OrderImportService\Generator::Shipment [#29]
