@@ -2,6 +2,10 @@
 
 # Package: softcommerce/module-core
 
+### Version 1.4.0
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+- **Feature**: Improvements and new functionality [#2]
+
 ### Version 1.3.7
 - **Enhancement**: Add a custom field heading for system configuration. [#1]
 
@@ -75,7 +79,9 @@ model that's used to retrieve product entity data in array format.
 
 # Package: softcommerce/module-plenty-attribute
 
-### Version 1.2.8
+### Version 1.3.0
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+- **Enhancement**: Improvements to attribute export [#3]
 - **Fix**: Operator is not allowed in this criteria class [#2]
 
 ### Version 1.2.7
@@ -107,6 +113,9 @@ model that's used to retrieve product entity data in array format.
 
 # Package: softcommerce/module-plenty-attribute-rest-api
 
+### Version 1.2.4
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.2.3
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1 #2
 
@@ -123,6 +132,9 @@ model that's used to retrieve product entity data in array format.
 - **Feature**: [M2PA-1] New module to handle Plenty Attribute REST API client.
 
 # Package: softcommerce/module-plenty-category
+
+### Version 1.2.8
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
 ### Version 1.2.7
 - **Enhancement**: Add an event observer `catalog_category_delete_after` to handle deleted categories [#1]
@@ -155,6 +167,9 @@ model that's used to retrieve product entity data in array format.
 - **Feature**: [M2PCAT-1] New module to handle category entity.
 
 # Package: softcommerce/module-plenty-category-profile
+
+### Version 1.3.8
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
 ### Version 1.3.7
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 [#5]
@@ -264,6 +279,9 @@ model that's used to retrieve product entity data in array format.
 
 # Package: softcommerce/module-plenty-client
 
+### Version 1.3.1
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.3.0
 - **Enhancement**: New functionality to manage client tokens via CLI [#1]
 
@@ -350,6 +368,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-customer
 
+### Version 1.2.9
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.2.8
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1 #2
 
@@ -431,6 +452,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-customer-profile
 
+### Version 1.0.7
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.0.6
 - **Enhancement**: Handle contacts that are not found during contact address relation export. [#4]
 
@@ -478,6 +502,10 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 - **Feature**: [M2PC-26] New module to handle customer REST API requests.
 
 # Package: softcommerce/module-plenty-item
+
+### Version 1.4.0
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+- **Feature**: New functionality and improvements to product export. #4
 
 ### Version 1.3.8
 - **Enhancement**: Remove deleted constant PROCESSED_AT from SoftCommerce\PlentyItem\Model\ResourceModel\Item\Collection [#3]
@@ -681,6 +709,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-item-client
 
+### Version 1.2.7
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.2.6
 - **Enhancement**: Changed console command names for better reading.
 
@@ -711,6 +742,10 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 - **Feature**: [M2PO-55] New module to handle item client entity.
 
 # Package: softcommerce/module-plenty-item-profile
+
+### Version 1.6.0
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+- **Feature**: New functionality and improvements to product export [#15]
 
 ### Version 1.5.11
 - **Fix**: Validation error found: attribute values do not match the other variations [#13]
@@ -895,6 +930,9 @@ where identical values from default scope were used in other stores, resulting i
 
 # Package: softcommerce/module-plenty-item-profile-schedule
 
+### Version 1.2.9
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.2.8
 - **Fix**: Remove date filter from property REST API request route as it doesn't seem to work well.
 
@@ -932,6 +970,9 @@ where identical values from default scope were used in other stores, resulting i
 
 # Package: softcommerce/module-plenty-item-rest-api
 
+### Version 1.2.9
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.2.8
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1 #2
 
@@ -965,6 +1006,9 @@ where identical values from default scope were used in other stores, resulting i
 
 # Package: softcommerce/module-plenty-log
 
+### Version 1.2.5
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.2.4
 - **Enhancement**: Changed console command names for better reading.
 
@@ -987,6 +1031,9 @@ where identical values from default scope were used in other stores, resulting i
 - **Feature**: [M2PM2-102] New module to handle Plenty Log services.
 
 # Package: softcommerce/module-plenty-order
+
+### Version 1.3.8
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
 ### Version 1.3.7
 - **Feature**: New method in SoftCommerce\PlentyOrder\Api\Data\OrderInterface to check if an order has child orders with Type ID: Delivery. [#5]
@@ -1217,6 +1264,9 @@ Running schema recurring...Warning: Undefined array key "" in vendor/magento/fra
 
 # Package: softcommerce/module-plenty-order-profile
 
+### Version 1.6.8
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ## Version 1.6.7
 - **Enhancement**: Improvements to SoftCommerce\PlentyOrderProfile\Model\OrderExportService\Generator\Order\Items\Item::isSimpleLineItem [#31]
 
@@ -1404,6 +1454,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-order-profile-schedule
 
+### Version 1.2.10
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.2.9
 - **Compatibility**: Added compatibility PHP 8.[0,1] and Magento 2.4.6.
 - **Enhancement**: Added new cron tasks to handle locked orders.
@@ -1475,6 +1528,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-profile
 
+### Version 1.3.2
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.3.1
 - **Compatibility**: Added compatibility PHP 8.[0,1] and Magento 2.4.6.
 
@@ -1523,6 +1579,10 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-property
 
+### Version 1.3.0
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+- **Feature**: New functionality and improvements to property export [#1]
+
 ### Version 1.2.5
 - **Enhancement**: Changed console command names for better reading.
 
@@ -1547,6 +1607,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-property-rest-api
 
+### Version 1.2.5
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.2.4
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1
 
@@ -1566,6 +1629,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PP-1] New module to handle property REST API requests.
 
 # Package: softcommerce/module-plenty-rest-api
+
+### Version 1.3.4
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
 ### Version 1.3.3
 - **Enhancement**: Add public constants for client HTTP query messages. 
@@ -1614,6 +1680,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PM2-99] New module to handle client REST API.
 
 # Package: softcommerce/module-plenty-stock
+
+### Version 1.3.3
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
 ### Version 1.3.2
 - **Enhancement**: Removed deprecated class SoftCommerce\PlentyStock\Model\QueueManagement [#4]
@@ -1728,6 +1797,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PO-55] New module to handle stock client entity.
 
 # Package: softcommerce/module-plenty-stock-profile
+
+### Version 1.3.3
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
 ### Version 1.3.2
 - **Enhancement**: Changed console command names for better reading.
@@ -1897,6 +1969,9 @@ that prevents from reservation save process. `#1`
 
 # Package: softcommerce/module-profile
 
+### Version 1.3.4
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.3.3
 - **Enhancement**: Applied changes to the styles for message text colours. [#1]
 
@@ -1950,6 +2025,9 @@ that prevents from reservation save process. `#1`
 
 # Package: softcommerce/module-profile-config
 
+### Version 1.2.9
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.2.8
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1 #2
 - **Enhancement**: Ability to export / import profile config data. #1
@@ -1983,6 +2061,9 @@ that prevents from reservation save process. `#1`
 
 # Package: softcommerce/module-profile-history
 
+### Version 1.2.7
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.2.6
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1
 
@@ -2010,6 +2091,9 @@ that prevents from reservation save process. `#1`
 
 # Package: softcommerce/module-profile-queue
 
+### Version 1.0.7
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
+
 ### Version 1.0.6
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1
 
@@ -2032,6 +2116,9 @@ that prevents from reservation save process. `#1`
 - **Feature**: New module to handle profile queue entity.
 
 # Package: softcommerce/module-profile-schedule
+
+### Version 1.3.2
+- **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
 ### Version 1.3.1
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1
