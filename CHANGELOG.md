@@ -2,6 +2,9 @@
 
 # Package: softcommerce/module-core
 
+### Version 1.4.1
+- **Enhancement**: Add new methods to `\SoftCommerce\Core\Model\Catalog\MediaManagementInterface`
+
 ### Version 1.4.0
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 - **Feature**: Improvements and new functionality [#2]
@@ -743,6 +746,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-item-profile
 
+### Version 1.6.1
+- **Feature**: Added image export functionality. [#16]
+
 ### Version 1.6.0
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 - **Feature**: New functionality and improvements to product export [#15]
@@ -969,6 +975,9 @@ where identical values from default scope were used in other stores, resulting i
 - **Feature**: [M2PO-57] New module to handle item profile schedule entity.
 
 # Package: softcommerce/module-plenty-item-rest-api
+
+### Version 1.2.10
+- **Enhancement**: Added new API Routes to item image. 
 
 ### Version 1.2.9
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
