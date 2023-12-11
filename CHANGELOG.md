@@ -2,6 +2,9 @@
 
 # Package: softcommerce/module-core
 
+### Version 1.4.2
+- **Enhancement**: Improvements to data storage framework [#3]
+
 ### Version 1.4.1
 - **Enhancement**: Add new methods to `\SoftCommerce\Core\Model\Catalog\MediaManagementInterface`
 
@@ -82,6 +85,9 @@ model that's used to retrieve product entity data in array format.
 
 # Package: softcommerce/module-plenty-attribute
 
+### Version 1.3.1
+- **Enhancement** Implement queue message to handle data collection process upon completion of attribute export. [#4]
+
 ### Version 1.3.0
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 - **Enhancement**: Improvements to attribute export [#3]
@@ -115,6 +121,9 @@ model that's used to retrieve product entity data in array format.
 - **Feature**: [M2PA-1] New module to handle Plenty Attribute entity.
 
 # Package: softcommerce/module-plenty-attribute-rest-api
+
+### Version 1.2.5
+- **Enhancement** Compatibility with PlentyAttribute module version 1.3.1
 
 ### Version 1.2.4
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
@@ -170,6 +179,9 @@ model that's used to retrieve product entity data in array format.
 - **Feature**: [M2PCAT-1] New module to handle category entity.
 
 # Package: softcommerce/module-plenty-category-profile
+
+### Version 1.3.9
+- **Enhancement**: General code improvements. 
 
 ### Version 1.3.8
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
@@ -455,6 +467,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-customer-profile
 
+### Version 1.0.8
+- **Enhancement**: General code improvements.
+
 ### Version 1.0.7
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
@@ -505,6 +520,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 - **Feature**: [M2PC-26] New module to handle customer REST API requests.
 
 # Package: softcommerce/module-plenty-item
+
+### Version 1.4.1
+- **Enhancement**: General code improvements.
 
 ### Version 1.4.0
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
@@ -746,6 +764,11 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-item-profile
 
+### Version 1.6.2
+- **Enhancement**:  Improvements to item export. [#19]
+- **Enhancement**: Implement queue message to handle data collection process upon completion of product export [#18]
+- **Fix**: Item image names are not updating in PM [#17]
+
 ### Version 1.6.1
 - **Feature**: Added image export functionality. [#16]
 
@@ -936,6 +959,9 @@ where identical values from default scope were used in other stores, resulting i
 
 # Package: softcommerce/module-plenty-item-profile-schedule
 
+### Version 1.2.10
+- **Enhancement**: General code improvements.
+
 ### Version 1.2.9
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
@@ -976,6 +1002,9 @@ where identical values from default scope were used in other stores, resulting i
 
 # Package: softcommerce/module-plenty-item-rest-api
 
+### Version 1.2.11
+- **Enhancement**: General code improvements.
+
 ### Version 1.2.10
 - **Enhancement**: Added new API Routes to item image. 
 
@@ -1014,6 +1043,9 @@ where identical values from default scope were used in other stores, resulting i
 - **Feature**: [M2PO-58] New module to handle Item REST API requests.
 
 # Package: softcommerce/module-plenty-log
+
+### Version 1.2.6
+- **Enhancement**: General code improvements.
 
 ### Version 1.2.5
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
@@ -1272,6 +1304,9 @@ Running schema recurring...Warning: Undefined array key "" in vendor/magento/fra
 - **Feature**: [M2PO-55] New module to handle order client entity.
 
 # Package: softcommerce/module-plenty-order-profile
+
+### Version 1.6.9
+- **Enhancement**: General code improvements.
 
 ### Version 1.6.8
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
@@ -1537,6 +1572,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-profile
 
+### Version 1.3.3
+- **Enhancement**: Added a method to filter stores by unique locals in `\SoftCommerce\PlentyProfile\Model\Config\StoreConfigInterface`
+
 ### Version 1.3.2
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
@@ -1588,6 +1626,10 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-property
 
+### Version 1.3.1
+- **Enhancement**: Improvements to property export [#3]
+- **Enhancement**: Implement queue message to handle data collection process upon completion of property export [#2]
+
 ### Version 1.3.0
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 - **Feature**: New functionality and improvements to property export [#1]
@@ -1638,6 +1680,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PP-1] New module to handle property REST API requests.
 
 # Package: softcommerce/module-plenty-rest-api
+
+### Version 1.3.5
+- **Enhancement**: General code improvements.
 
 ### Version 1.3.4
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
@@ -1807,6 +1852,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-stock-profile
 
+### Version 1.3.4
+- **Enhancement**: General code improvements.
+
 ### Version 1.3.3
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
@@ -1894,6 +1942,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-stock-reservation
 
+### Version 1.3.2
+- **Enhancement**: General code improvements.
+
 ### Version 1.3.1
 - **Enhancement**: Changed console command names for better reading.
 
@@ -1977,6 +2028,9 @@ that prevents from reservation save process. `#1`
 - **Feature**: [M2PO-55] New module to handle stock rest api entity.
 
 # Package: softcommerce/module-profile
+
+### Version 1.3.5
+- **Enhancement**: General code improvements.
 
 ### Version 1.3.4
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
@@ -2125,6 +2179,9 @@ that prevents from reservation save process. `#1`
 - **Feature**: New module to handle profile queue entity.
 
 # Package: softcommerce/module-profile-schedule
+
+### Version 1.3.3
+- **Fix**: No callbacks found for cron job plenty_customer_export. [#1]
 
 ### Version 1.3.2
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
