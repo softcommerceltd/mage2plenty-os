@@ -467,6 +467,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-customer-profile
 
+### Version 1.0.9
+- **Fix**: Argument #1 ($websiteId) must be of type array|int, string given, called in SoftCommerce/PlentyCustomerProfile/.../Generator/Customer.php [#5]
+
 ### Version 1.0.8
 - **Enhancement**: General code improvements.
 
