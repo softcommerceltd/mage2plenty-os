@@ -2,6 +2,9 @@
 
 # Package: softcommerce/module-core
 
+### Version 1.4.3
+- **Enhancement**: An option to retrieve attribute source options in \SoftCommerce\Core\Model\Eav\GetEavAttributeOptionValueData [#4]
+
 ### Version 1.4.2
 - **Enhancement**: Improvements to data storage framework [#3]
 
@@ -524,6 +527,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-item
 
+### Version 1.4.2
+- **Enhancement**: Improvements to product export [#5]
+
 ### Version 1.4.1
 - **Enhancement**: General code improvements.
 
@@ -767,8 +773,12 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-item-profile
 
+### Version 1.6.3
+- **Fix**: Argument #1 ($sku) must be of type string, int given, called in .../Pim.php on line 183 [#21]
+- **Enhancement**: Improvements to product export [#20]
+
 ### Version 1.6.2
-- **Enhancement**:  Improvements to item export. [#19]
+- **Enhancement**: Improvements to item export. [#19]
 - **Enhancement**: Implement queue message to handle data collection process upon completion of product export [#18]
 - **Fix**: Item image names are not updating in PM [#17]
 
@@ -1854,6 +1864,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PO-55] New module to handle stock client entity.
 
 # Package: softcommerce/module-plenty-stock-profile
+
+### Version 1.3.5
+- **Fix** Applied a fix to item indexing and cache clearance after source item import. [#5]
 
 ### Version 1.3.4
 - **Enhancement**: General code improvements.
