@@ -776,6 +776,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-item-profile
 
+### Version 1.6.5
+- **Enhancement**: Add price rounding option for product import [#23]
+
 ### Version 1.6.4
 - **Feature**: Add attribute restriction to product import functionality [#22]
 
