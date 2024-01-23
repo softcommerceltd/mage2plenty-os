@@ -470,6 +470,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-customer-profile
 
+### Version 1.0.10
+- **Fix**: Applied a fix to message output in `SoftCommerce\PlentyCustomerProfile\Observer\Backend\ProfileSaveAfterControllerAction::execute`
+
 ### Version 1.0.9
 - **Fix**: Argument #1 ($websiteId) must be of type array|int, string given, called in SoftCommerce/PlentyCustomerProfile/.../Generator/Customer.php [#5]
 
@@ -772,6 +775,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 - **Feature**: [M2PO-55] New module to handle item client entity.
 
 # Package: softcommerce/module-plenty-item-profile
+
+### Version 1.6.4
+- **Feature**: Add attribute restriction to product import functionality [#22]
 
 ### Version 1.6.3
 - **Fix**: Argument #1 ($sku) must be of type string, int given, called in .../Pim.php on line 183 [#21]
@@ -1317,6 +1323,9 @@ Running schema recurring...Warning: Undefined array key "" in vendor/magento/fra
 - **Feature**: [M2PO-55] New module to handle order client entity.
 
 # Package: softcommerce/module-plenty-order-profile
+
+### Version 1.6.10
+- **Fix**: PM Order Status not updated in Magento order grid. [#30]
 
 ### Version 1.6.9
 - **Enhancement**: General code improvements.
@@ -1864,6 +1873,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PO-55] New module to handle stock client entity.
 
 # Package: softcommerce/module-plenty-stock-profile
+
+### Version 1.3.6
+- **Fix**: Applied a fix to message output in `SoftCommerce\PlentyStockProfile\Observer\Backend\ProfileSaveAfterControllerAction::execute`
 
 ### Version 1.3.5
 - **Fix** Applied a fix to item indexing and cache clearance after source item import. [#5]
