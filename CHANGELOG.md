@@ -2,6 +2,9 @@
 
 # Package: softcommerce/module-core
 
+### version 1.4.4
+- **Enhancement**: New method to build DB metadata for insert request. [#5]
+
 ### Version 1.4.3
 - **Enhancement**: An option to retrieve attribute source options in \SoftCommerce\Core\Model\Eav\GetEavAttributeOptionValueData [#4]
 
@@ -530,6 +533,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-item
 
+### Version 1.4.3
+- **Enhancement**: Codebase improvements to \SoftCommerce\PlentyItem\Model\GetVariationIdBySku::executeMultiple [#6]
+
 ### Version 1.4.2
 - **Enhancement**: Improvements to product export [#5]
 
@@ -538,7 +544,7 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 ### Version 1.4.0
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
-- **Feature**: New functionality and improvements to product export. #4
+- **Feature**: New functionality and improvements to product export. [#4]
 
 ### Version 1.3.8
 - **Enhancement**: Remove deleted constant PROCESSED_AT from SoftCommerce\PlentyItem\Model\ResourceModel\Item\Collection [#3]
@@ -776,6 +782,9 @@ in `SoftCommerce > PlentyMarkets > Manage Client Connection`
 
 # Package: softcommerce/module-plenty-item-profile
 
+### Version 1.6.6
+- **Feature**: Introduce onetime schedule to collect items at specified times as part of cron job process [#24]
+
 ### Version 1.6.5
 - **Enhancement**: Add price rounding option for product import [#23]
 
@@ -980,6 +989,9 @@ where identical values from default scope were used in other stores, resulting i
 - **Feature**: [M2P-1] New module to handle Plenty Log services.
 
 # Package: softcommerce/module-plenty-item-profile-schedule
+
+### Version 1.2.11
+- **Feature**: Introduce onetime schedule to collect items at specified times as part of cron job process [#2]
 
 ### Version 1.2.10
 - **Enhancement**: General code improvements.
@@ -1327,6 +1339,9 @@ Running schema recurring...Warning: Undefined array key "" in vendor/magento/fra
 
 # Package: softcommerce/module-plenty-order-profile
 
+### Version 1.6.11
+- **Feature** Create new queue messaging for order collect process [#32]
+
 ### Version 1.6.10
 - **Fix**: PM Order Status not updated in Magento order grid. [#30]
 
@@ -1522,6 +1537,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PO-56] New module to handle order profile entity.
 
 # Package: softcommerce/module-plenty-order-profile-schedule
+
+### Version 1.2.11
+- **Compatibility** Phaseout profile queue collect process in favour of message queue [#2]
 
 ### Version 1.2.10
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
@@ -1760,6 +1778,10 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-stock
 
+### Version 1.3.4
+- **Feature**: Introduce onetime schedule to collect stock at specified times as part of cron job process [#6]
+- **Enhancement**: Remove deprecated functionality for stock collect message queue [#5]
+
 ### Version 1.3.3
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
@@ -1877,6 +1899,13 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-stock-profile
 
+### Version 1.3.7
+- **Fix**: Undefined array key "default" in SoftCommerce/PlentyStockProfile/Model/Config/StockConfig.php on line 134 [#11]
+- **Feature**: New functionality to export stock using stock correction routes [#10]
+- **Feature**: Introduce onetime schedule to collect stock at specified times as part of cron job process [#8]
+- **Feature**: Create new queue messaging for stock collect process [#7]
+- **Feature**: New stock export functionality [#6]
+
 ### Version 1.3.6
 - **Fix**: Applied a fix to message output in `SoftCommerce\PlentyStockProfile\Observer\Backend\ProfileSaveAfterControllerAction::execute`
 
@@ -1944,6 +1973,10 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-stock-profile-schedule
 
+### Version 1.2.8
+- **Feature**: Introduce onetime schedule to collect stock at specified times as part of cron job process [#3]
+- **Compatibility** Phaseout profile queue collect process in favour of message queue [#2]
+
 ### Version 1.2.7
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1
 
@@ -1973,6 +2006,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-stock-reservation
 
+### Version 1.3.3
+- **Enhancement**: Introduce message queue for StockCollectScheduler::execute [#3]
+
 ### Version 1.3.2
 - **Enhancement**: General code improvements.
 
@@ -1980,7 +2016,7 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Enhancement**: Changed console command names for better reading.
 
 ### Version 1.3.0
-- **Fix**: Reservations are being deleted during the source code assignment process. #2
+- **Fix**: Reservations are being deleted during the source code assignment process. [#2]
 
 ### Version 1.2.9
 - **Compatibility**: Compatibility with `SoftCommerce_PlentyOrderProfile` version 1.4.2.
@@ -2031,6 +2067,9 @@ that prevents from reservation save process. `#1`
 - **Improvement**: [M2PSR-1] Stock reservation improvement.
 
 # Package: softcommerce/module-plenty-stock-rest-api
+
+### Version 1.2.6
+- **Feature**: New functionality to create stock corrections [#1].
 
 ### Version 1.2.5
 - **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1
@@ -2119,12 +2158,15 @@ that prevents from reservation save process. `#1`
 
 # Package: softcommerce/module-profile-config
 
+### Version 1.2.10
+- **Enhancement**: General codebase improvements [#3]
+
 ### Version 1.2.9
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
 ### Version 1.2.8
-- **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1 #2
-- **Enhancement**: Ability to export / import profile config data. #1
+- **Compatibility**: Add compatibility for PHP 8.2 and Magento 2.4.6-p1 [#2]
+- **Enhancement**: Ability to export / import profile config data. [#1]
 
 ### Version 1.2.7
 - **Fix**: Applied a fix to `SoftCommerce\ProfileConfig\Model\AbstractConfig::getConfigDataSerialized` where return type must be an array.
@@ -2185,6 +2227,9 @@ that prevents from reservation save process. `#1`
 
 # Package: softcommerce/module-profile-queue
 
+### Version 1.1.0
+- **Enhancement**: Changes to queue functionality [#1]
+
 ### Version 1.0.7
 - **Compatibility**: Add compatibility for Magento 2.4.6-p3 and Magento 2.4.7
 
@@ -2210,6 +2255,12 @@ that prevents from reservation save process. `#1`
 - **Feature**: New module to handle profile queue entity.
 
 # Package: softcommerce/module-profile-schedule
+
+### Version 1.3.5
+- **Fix**: Fix onetime schedule cache identifier [#3]
+
+### Version 1.3.4
+- **Feature**: Introduce onetime schedule to run at specified times as part of cron job process. [#2]
 
 ### Version 1.3.3
 - **Fix**: No callbacks found for cron job plenty_customer_export. [#1]
