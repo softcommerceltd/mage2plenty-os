@@ -1899,6 +1899,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 
 # Package: softcommerce/module-plenty-stock-profile
 
+### Version 1.3.8
+- **Fix**: Adjustment to profile_plenty_stock_import_form.xml action sort order [#12]
+
 ### Version 1.3.7
 - **Fix**: Undefined array key "default" in SoftCommerce/PlentyStockProfile/Model/Config/StockConfig.php on line 134 [#11]
 - **Feature**: New functionality to export stock using stock correction routes [#10]
@@ -2005,6 +2008,9 @@ the behavior of public methods for `SoftCommerce\PlentyOrderProfile\Model\OrderI
 - **Feature**: [M2PS-19] New module to handle stock profile schedule services.
 
 # Package: softcommerce/module-plenty-stock-reservation
+
+### Version 1.3.4
+- **Fix**: The requested class did not generate properly, because the 'generated' directory permission is read-only [#4]
 
 ### Version 1.3.3
 - **Enhancement**: Introduce message queue for StockCollectScheduler::execute [#3]
