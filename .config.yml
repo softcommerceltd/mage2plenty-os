@@ -1,0 +1,4 @@
+packages:
+  - softcommerce/automatic-workflow-test
+  - softcommerce/module-fakeentitycreator
+
