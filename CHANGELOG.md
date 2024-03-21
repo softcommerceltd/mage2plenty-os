@@ -1,40 +1,48 @@
 ## Changelog
 
-# Mage2PlentyOs [1.5.4] 21 Mar 2024
-
-### softcommerce/automatic-workflow-test [1.0.33]
-- **Feature**: New feature test
-- **Fix**: A fix for xxx
-
-### softcommerce/module-fakeentitycreator [1.0.7]
-- **Compatibility**: Compatibility with PHP 8.3
-
 # Mage2PlentyOs [1.5.3] 21 Mar 2024
 
-### softcommerce/automatic-workflow-test [1.0.33]
-- **Feature**: New feature test
-- **Fix**: A fix for xxx
+### softcommerce/module-core [1.5.0]
+- **Compatibility**: Introduced compatibility with PHP type declaration [#9]
+- **Compatibility**: Introduced support for PHP 8.3 [#8]
+- **Feature**: Implement functionality to support UI form scope data [#7]
 
-# Mage2PlentyOs [1.5.3] 21 Mar 2024
+### softcommerce/module-plenty-category-profile [1.3.10]
+- **Compatibility**: Introduced support for PHP 8.3 [#7]
+- **Enhancement**: Improvements to UI form components for category configuration profile [#6]
 
-### softcommerce/automatic-workflow-test [1.0.33]
-- **Feature**: New feature test
-- **Fix**: A fix for xxx
+### softcommerce/module-plenty-customer-profile [1.1.0]
+- **Enhancement**: An option to retrieve a referrer ID by store cope [#9]
+- **Compatibility**: Introduced support for PHP 8.3 [#8]
+- **Enhancement**: Improvements to UI form components for customer profile configuration [#7]
 
-# Mage2PlentyOs [1.5.3] 21 Mar 2024
+### softcommerce/module-plenty-item-profile [1.7.0]
+- **Compatibility**: Introduced support for PHP 8.3 [#27]
+- **Enhancement**: Improvements to UI form components for item profile configuration [#26]
 
-### softcommerce/automatic-workflow-test [1.0.33]
-- **Feature**: New feature test
-- **Fix**: A fix for xxx
+### softcommerce/module-plenty-order [1.4.0]
+- **Compatibility**: Introduced support for PHP 8.3 [#7]
+- **Enhancement**: Introduced compatibility with PHP type declaration [#6]
 
-# Mage2PlentyOs [1.5.3] 21 Mar 2024
+### softcommerce/module-plenty-order-profile [1.7.0]
+- **Compatibility**: Introduced support for PHP 8.3 [#35]
+- **Feature**: Introduced support for scoped configuration within profile UI form components [#34]
 
-### softcommerce/automatic-workflow-test [1.0.33]
-- **Feature**: New feature test
-- **Fix**: A fix for xxx
+### softcommerce/module-plenty-order-profile-schedule [1.2.12]
+- **Compatibility**: Introduced support for PHP 8.3 [#3]
 
-# Mage2PlentyOs [1.5.3] 21 Mar 2024
+### softcommerce/module-plenty-profile [1.4.0]
+- **Enhancement**: Changes to profile configuration where referrer ID is now retrieved by store scope instead of website [#2]
+- **Compatibility**: Introduced support for PHP 8.3 [#1]
 
-### softcommerce/automatic-workflow-test [1.0.33]
-- **Feature**: New feature test
-- **Fix**: A fix for xxx
+### softcommerce/module-plenty-stock-profile [1.5.0]
+- **Feature**: Introduced support for scoped configuration within profile UI form components [#15]
+- **Compatibility**: Introduced support for PHP 8.3 [#14]
+
+### softcommerce/module-profile [1.4.0]
+- **Feature**: Introduced functionality to support UI form scoped data [#3]
+- **Compatibility**: Introduced support for PHP 8.3 [#2]
+
+### softcommerce/module-profile-config [1.2.11]
+- **Compatibility**: Introduced support for PHP 8.3 [#2]
+
