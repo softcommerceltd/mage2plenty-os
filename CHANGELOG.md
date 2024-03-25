@@ -1,5 +1,15 @@
 ## Changelog
 
+# Mage2PlentyOs [1.5.4] 25 Mar 2024
+
+### softcommerce/module-plenty-item-profile [1.7.1]
+- **Enhancement**: Added an option to allow/disallow child product name generation based on parent name and attributes [#28]
+
+# Mage2PlentyOs [1.5.4] 25 Mar 2024
+
+### softcommerce/module-plenty-item-profile [1.7.1]
+- **Enhancement**: Added an option to allow/disallow child product name generation based on parent name and attributes [#28]
+
 # Mage2PlentyOs [1.5.3] 21 Mar 2024
 
 ### softcommerce/module-core [1.5.0]
@@ -45,4 +55,3 @@
 
 ### softcommerce/module-profile-config [1.2.11]
 - **Compatibility**: Introduced support for PHP 8.3 [#2]
-

@@ -19,7 +19,7 @@
         "softcommerce/module-plenty-customer-rest-api": "1.2.5",
         "softcommerce/module-plenty-item": "1.4.4",
         "softcommerce/module-plenty-item-client": "1.2.7",
-        "softcommerce/module-plenty-item-profile": "1.7.0",
+        "softcommerce/module-plenty-item-profile": "1.7.1",
         "softcommerce/module-plenty-item-profile-schedule": "1.2.11",
         "softcommerce/module-plenty-item-rest-api": "1.2.11",
         "softcommerce/module-plenty-log": "1.2.6",
@@ -43,5 +43,5 @@
         "softcommerce/module-profile-queue": "1.1.0",
         "softcommerce/module-profile-schedule": "1.3.5"
     },
-    "version": "1.5.3"
+    "version": "1.5.4"
 }
