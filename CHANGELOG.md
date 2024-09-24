@@ -1,5 +1,22 @@
 ## Changelog
 
+# Mage2PlentyOs [1.6.3] 24 Sep 2024
+
+### softcommerce/module-core [1.5.5]
+- **Compatibility**: Add compatibility for Magento 2.4.7-p2
+
+### softcommerce/module-plenty-item [1.4.8]
+- **Enhancement**: Added new methods to `SoftCommerce\PlentyItem\Model\Service\SaveProductItemVariationIdMappingInterface`
+
+### softcommerce/module-plenty-item-profile [1.8.3]
+- **Enhancement**: An option to configure media image export type. E.g. Images can be exported by providing either a direct URL or a base64 encoded image data. [#21]
+- **Enhancement**: Allow mapping properties with type scope global to attributes with type scope website/store [#20]
+- **Fix**: Fix massaction responsible for deleting client items externally [#19]
+- **Enhancement**: Add an option to resolve duplicate client images [#18]
+
+### softcommerce/module-plenty-property [1.3.5]
+- **Enhancement**: An option to override `isGlobal` condition in `SoftCommerce\PlentyProperty\Model\AttributeToPropertyTypeMappingInterface::getPropertyTypeByAttribute`
+
 # Mage2PlentyOs [1.6.2] 21 Sep 2024
 
 ### softcommerce/module-core [1.5.4]
