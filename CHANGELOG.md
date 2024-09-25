@@ -1,5 +1,18 @@
 ## Changelog
 
+# Mage2PlentyOs [1.6.4] 25 Sep 2024
+
+### softcommerce/module-plenty-item [1.5.0]
+- **Feature**: Introduce a feature to delete local item storage from admin UI [#23]
+
+### softcommerce/module-plenty-item-profile [1.9.0]
+- **Feature**: Introduce a feature to map product SKUs to Item and Variation IDs [#24]
+- **Feature**: Introduce a feature to schedule item collect process from the admin UI [#22]
+- **Fix**: Add a fix for duplicate client images deletion functionality [#18]
+
+### softcommerce/module-profile [1.4.2]
+- **Enhancement**: Add an option to include a menu with item that depends on URL and confirmation message for profile actions button [#25]
+
 # Mage2PlentyOs [1.6.3] 24 Sep 2024
 
 ### softcommerce/module-core [1.5.5]

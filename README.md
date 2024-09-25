@@ -2,7 +2,7 @@
 Metapackage of bundled modules.
 
 ## Requirements
-* [Magento 2.4.0 - 2.4.6](https://magento.com/tech-resources/download).
+* [Magento 2.4.0 - 2.4.7](https://magento.com/tech-resources/download).
 * PHP 8.0.0 or later
 
 ## Installation
