@@ -12,18 +12,39 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          name: 1.6.4 [CE|EE|ECE 2.4.0-2.4.7] 25 Sep 2024
-          tag_name: 1.6.4
+          name: 1.6.5 [CE|EE|ECE 2.4.0-2.4.7] 27 Sep 2024
+          tag_name: 1.6.5
           body: |2-
-            ### softcommerce/module-plenty-item [1.5.0]
-            - **Feature**: Introduce a feature to delete local item storage from admin UI [#23]
+            ### softcommerce/module-core [1.5.6]
+            - **Enhancement**: Added an option to display installed metapackages for the bundled modules
 
-            ### softcommerce/module-plenty-item-profile [1.9.0]
-            - **Feature**: Introduce a feature to map product SKUs to Item and Variation IDs [#24]
-            - **Feature**: Introduce a feature to schedule item collect process from the admin UI [#22]
-            - **Fix**: Add a fix for duplicate client images deletion functionality [#18]
+            ### softcommerce/module-plenty-category-profile [1.3.13]
+            - **Compatibility**: Applied compatibility for profile common configuration paths [#27]
 
-            ### softcommerce/module-profile [1.4.2]
-            - **Enhancement**: Add an option to include a menu with item that depends on URL and confirmation message for profile actions button [#25]
+            ### softcommerce/module-plenty-customer-profile [1.1.3]
+            - **Compatibility**: Applied compatibility for profile common configuration paths [#27]
+
+            ### softcommerce/module-plenty-item-profile [1.9.1]
+            - **Compatibility**: Applied compatibility for profile common configuration paths [#27]
+
+            ### softcommerce/module-plenty-order-profile [1.7.3]
+            - **Enhancement**: Generate unique ID for guest customers that is required for PM contact number [#28]
+            - **Compatibility**: Applied compatibility for profile common configuration paths [#27]
+
+            ### softcommerce/module-plenty-profile [1.5.0]
+            - **Feature**: Profiles that share common configuration paths can now be saved simultaneously from any profile [#27]
+
+            ### softcommerce/module-plenty-stock [1.3.7]
+            - **Enhancement**: Addressed minor performance improvements for `SoftCommerce\PlentyStock\Model\GetOrderItemSourceSelection::generateInventoryRequest()`
+
+            ### softcommerce/module-plenty-stock-profile [1.7.0]
+            - **Compatibility**: Applied compatibility for profile common configuration paths [#27]
+            - **Feature**: Introduce custom Source Selection Algorithm to achieve precise NET calculation by accounting for reservations [#26]
+
+            ### softcommerce/module-profile [1.4.3]
+            - **Enhancement**: Added profile config data to event dispatcher for save before/after events.
+
+            ### softcommerce/module-profile-config [1.2.13]
+            - **Fix**: Apply a fix where profile config scope writer saves value as array opposed to serialised data [#29]
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
