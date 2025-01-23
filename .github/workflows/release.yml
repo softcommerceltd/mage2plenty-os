@@ -12,10 +12,10 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          name: 1.8.1 [CE|EE|ECE 2.4.0-2.4.7] 15 Jan 2025
-          tag_name: 1.8.1
+          name: 1.8.2 [CE|EE|ECE 2.4.0-2.4.7] 23 Jan 2025
+          tag_name: 1.8.2
           body: |2-
-            ### softcommerce/module-plenty-order-profile [1.8.1]
-            -- **Fix**: SourceItemRepository::getQtyPhysical(): Argument #2 ($sourceCode) must be of type string, null given, called in /../softcommerce/module-plenty-order-profile/Model/OrderImportService/Generator/Shipment.php on line 247 [#42]
+            ### softcommerce/module-plenty-order-profile [1.8.2]
+            - **Enhancement**: Applied a fix to resolved an issue affecting orders from third-party sales channels. These orders were getting stuck in the scheduling queue repeatedly because their status wasn’t updating properly after processing. This caused the system to attempt processing them over and over without success. The fix ensures that the status updates correctly, preventing orders from being stuck and allowing them to move through the system smoothly
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

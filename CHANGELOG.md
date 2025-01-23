@@ -1,5 +1,10 @@
 ## Changelog
 
+# Mage2PlentyOs [1.8.2] 23 Jan 2025
+
+### softcommerce/module-plenty-order-profile [1.8.2]
+- **Enhancement**: Applied a fix to resolved an issue affecting orders from third-party sales channels. These orders were getting stuck in the scheduling queue repeatedly because their status wasn’t updating properly after processing. This caused the system to attempt processing them over and over without success. The fix ensures that the status updates correctly, preventing orders from being stuck and allowing them to move through the system smoothly
+
 # Mage2PlentyOs [1.8.1] 15 Jan 2025
 
 ### softcommerce/module-plenty-order-profile [1.8.1]
