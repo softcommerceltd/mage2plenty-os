@@ -1,5 +1,15 @@
 ## Changelog
 
+# Mage2PlentyOs [1.8.3] 31 Jan 2025
+
+### softcommerce/module-plenty-attribute [1.5.2]
+- **Enhancement**: Added a setup script to remove attribute entries from the `plenty_attribute_entity` table after migrating manufacturers to a dedicated table
+
+### softcommerce/module-plenty-item-profile [1.10.0]
+- **Enhancement**: Added an enhancement to accurately align the import of image sort orders with the data in the PlentyONE system. This change ensures that images maintain the correct sequence and display order based on PlentyONE’s configuration. [#44]
+- **Enhancement**: Introduced an enhancement to correctly remove outdated super attributes from configurable products. Previously, old configuration attributes remained in the system even after being deleted in PlentyONE, causing inconsistencies. This update ensures that any attributes removed in PlentyONE are now properly deleted and no longer remain in the system. [#43]
+- **Fix**: Applied a fix for TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, null given in softcommerce/module-plenty-item-profile/Ui/Component/Form/PlentyAttributeOptions.php:50
+
 # Mage2PlentyOs [1.8.2] 23 Jan 2025
 
 ### softcommerce/module-plenty-order-profile [1.8.2]

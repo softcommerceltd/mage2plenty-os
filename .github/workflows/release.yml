@@ -12,10 +12,15 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          name: 1.8.2 [CE|EE|ECE 2.4.0-2.4.7] 23 Jan 2025
-          tag_name: 1.8.2
+          name: 1.8.3 [CE|EE|ECE 2.4.0-2.4.7] 31 Jan 2025
+          tag_name: 1.8.3
           body: |2-
-            ### softcommerce/module-plenty-order-profile [1.8.2]
-            - **Enhancement**: Applied a fix to resolved an issue affecting orders from third-party sales channels. These orders were getting stuck in the scheduling queue repeatedly because their status wasn’t updating properly after processing. This caused the system to attempt processing them over and over without success. The fix ensures that the status updates correctly, preventing orders from being stuck and allowing them to move through the system smoothly
+            ### softcommerce/module-plenty-attribute [1.5.2]
+            - **Enhancement**: Added a setup script to remove attribute entries from the `plenty_attribute_entity` table after migrating manufacturers to a dedicated table
+
+            ### softcommerce/module-plenty-item-profile [1.10.0]
+            - **Enhancement**: Added an enhancement to accurately align the import of image sort orders with the data in the PlentyONE system. This change ensures that images maintain the correct sequence and display order based on PlentyONE’s configuration. [#44]
+            - **Enhancement**: Introduced an enhancement to correctly remove outdated super attributes from configurable products. Previously, old configuration attributes remained in the system even after being deleted in PlentyONE, causing inconsistencies. This update ensures that any attributes removed in PlentyONE are now properly deleted and no longer remain in the system. [#43]
+            - **Fix**: Applied a fix for TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, null given in softcommerce/module-plenty-item-profile/Ui/Component/Form/PlentyAttributeOptions.php:50
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
