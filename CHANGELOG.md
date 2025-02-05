@@ -1,5 +1,13 @@
 ## Changelog
 
+# Mage2PlentyOs [1.9.0] 05 Feb 2025
+
+### softcommerce/module-plenty-order [1.5.0]
+- **Feature**: Added functionality to refresh sales order grid using CLI [#45]
+
+### softcommerce/module-plenty-order-profile [1.9.0]
+- **Feature**: Added new feature to map PlentyONE and Magento orders using CLI [#46]
+
 # Mage2PlentyOs [1.8.3] 31 Jan 2025
 
 ### softcommerce/module-plenty-attribute [1.5.2]
