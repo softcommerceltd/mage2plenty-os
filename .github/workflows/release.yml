@@ -12,13 +12,16 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          name: 1.9.0 [CE|EE|ECE 2.4.0-2.4.7] 05 Feb 2025
-          tag_name: 1.9.0
+          name: 1.9.1 [CE|EE|ECE 2.4.0-2.4.7] 18 Feb 2025
+          tag_name: 1.9.1
           body: |2-
-            ### softcommerce/module-plenty-order [1.5.0]
-            - **Feature**: Added functionality to refresh sales order grid using CLI [#45]
+            ### softcommerce/module-plenty-order-profile [1.9.1]
+            - **Enhancement**: Optimized stock source assignment: Orders with default stock sources now reference item configuration for reservation checks, reducing resource overhead. [#48]
 
-            ### softcommerce/module-plenty-order-profile [1.9.0]
-            - **Feature**: Added new feature to map PlentyONE and Magento orders using CLI [#46]
+            ### softcommerce/module-plenty-stock [1.4.1]
+            - **Enhancement**: Created new interface for item stock configuration that allows quick verification of stock management status. This enhancement optimizes the overall efficiency of stock management within our system. [#47]
+
+            ### softcommerce/module-plenty-stock-profile [1.7.3]
+            - **Enhancement**: Minor codebase style improvements.
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
