@@ -1,5 +1,188 @@
 ## Changelog
 
+
+# mage2plenty-suite [1.14.1] 14 Jul 2025
+
+### softcommerce/module-plenty-attribute [1.5.3]
+- ## softcommerce/module-plenty-attribute [1.5.2] - **Enhancement**: Added a setup script to remove attribute entries from the `plenty_attribute_entity` table after migrating manufacturers to a dedicated table
+- ## softcommerce/module-plenty-attribute [1.5.1] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-attribute [1.5.0] - **Feature**: Add attributes for manufacturer model to facilitate GPSR data for Product Safety Regulation [#40]
+- ## softcommerce/module-plenty-attribute [1.4.2] - **Feature**: Introduce compatibility with `softcommerce/magento-core` module [#17]
+
+### softcommerce/module-plenty-attribute-rest-api [1.2.10]
+- ## softcommerce/module-plenty-attribute-rest-api [1.2.9] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-attribute-rest-api [1.2.8] - **Compatibility**: Added REST API collect functionality for compatability with GH feature: #40 [https://github.com/softcommerceltd/mage2plenty-os/issues/40]
+
+### softcommerce/module-plenty-category [1.3.1]
+- ## softcommerce/module-plenty-category [1.3.0] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-category [1.2.11] - **Feature**: Introduce compatibility with `softcommerce/magento-core` module [#17]
+
+### softcommerce/module-plenty-category-profile [1.4.1]
+- ## softcommerce/module-plenty-category-profile [1.4.0] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-category-profile [1.3.13] - **Compatibility**: Applied compatibility for profile common configuration paths [#27]
+
+### softcommerce/module-plenty-category-profile-schedule [1.2.7]
+- ## softcommerce/module-plenty-category-profile-schedule [1.2.6] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+
+### softcommerce/module-plenty-category-rest-api [1.2.6]
+- ## softcommerce/module-plenty-category-rest-api [1.2.5] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+
+### softcommerce/module-plenty-client [1.4.5]
+- ## softcommerce/module-plenty-client [1.4.4] - **Enhancement**: Improved the client token refresh logic to check if the refresh token has expired before using it. This prevents unnecessary login attempts and makes the token handling more robust. [#72]
+- ## softcommerce/module-plenty-client [1.4.3] - **Enhancement**: Removed unused database schema declaration.
+- ## softcommerce/module-plenty-client [1.4.2] - **Enhancement**: Added an option to clear client repository runtime cached data - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+
+### softcommerce/module-plenty-client-rest-api [1.3.3]
+- ## softcommerce/module-plenty-client-rest-api [1.3.2] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-client-rest-api [1.3.1] - **Fix**: SoftCommerce\PlentyClientRestApi\Model\Response\ConfigDataBuilder::buildItemArrayResponse(): Argument #1 ($item) must be of type array, string given #36
+
+### softcommerce/module-plenty-customer [1.3.5]
+- ## softcommerce/module-plenty-customer [1.3.4] - **Enhancement**: Removed unused database schema declaration.
+- ## softcommerce/module-plenty-customer [1.3.3] - **Fix**: Fix Unique Constraints in Database Schema for Plenty Address Relations [#55]
+- ## softcommerce/module-plenty-customer [1.3.2] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+
+### softcommerce/module-plenty-customer-client [1.2.10]
+- ## softcommerce/module-plenty-customer-client [1.2.9] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-customer-client [1.2.8] - **Enhancement**: Minor changes to codebase `SoftCommerce\PlentyCustomerClient\Model\AddressOptionTypeManagement`
+
+### softcommerce/module-plenty-customer-profile [1.1.5]
+- ## softcommerce/module-plenty-customer-profile [1.1.4] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-customer-profile [1.1.3] - **Compatibility**: Applied compatibility for profile common configuration paths [#27]
+
+### softcommerce/module-plenty-customer-rest-api [1.2.8]
+- ## softcommerce/module-plenty-customer-rest-api [1.2.7] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+
+### softcommerce/module-plenty-item [1.6.2]
+- ## softcommerce/module-plenty-item [1.6.1] - **Enhancement** Add isShippingType() Method to Plenty Item Modules [#69]
+- ## softcommerce/module-plenty-item [1.6.0] - **Feature**: Allow Export of “Not Visible Individually” Products to PlentyMarkets [#66] - **Enhancement**: Add Pagination to Product Chooser Modal in Product Export Listing [#65]
+- ## softcommerce/module-plenty-item [1.5.1] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-item [1.5.0] - **Feature**: Introduce a feature to delete local item storage from admin UI [#23]
+- ## softcommerce/module-plenty-item [1.4.8] - **Enhancement**: Added new methods to `SoftCommerce\PlentyItem\Model\Service\SaveProductItemVariationIdMappingInterface`
+
+### softcommerce/module-plenty-item-client [1.3.1]
+- ## softcommerce/module-plenty-item-client [1.3.0] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-item-client [1.2.10] - **Enhancement**: Remove `stock_warehouse_dimension, stock_warehouse_location and stock_warehouse_location_details` configs from client data collection process
+
+### softcommerce/module-plenty-item-profile [1.13.2]
+- ## softcommerce/module-plenty-item-profile [1.13.1] - **Fix**: Resolved an issue where the image import process would stop prematurely if the `namesData` array was empty. The logic has been adjusted to ensure the process continues, allowing for more flexible image handling. [#71]
+- ## softcommerce/module-plenty-item-profile [1.13.0] - **Feature**: Allow Export of “Not Visible Individually” Products to PlentyMarkets [#66]
+- ## softcommerce/module-plenty-item-profile [1.12.0] - **Feature**: New CLI Command to Clear Product Mappings [#61] - **Fix**: Override Configurable Attribute Values on Product Export [#60]
+- ## softcommerce/module-plenty-item-profile [1.11.3] - **Compatibility**: Proper Cache Invalidation for Varnish After Product Import [#59]
+- ## softcommerce/module-plenty-item-profile [1.11.2] - **Enhancement**: Validation error found :: attribute values do not match the other variations [#57]
+- ## softcommerce/module-plenty-item-profile [1.11.1] - **Enhancement**: Removed unused database schema declaration.
+- ## softcommerce/module-plenty-item-profile [1.11.0] - **Enhancement**: Optimize Image Handling to Prevent Unnecessary Downloads During Item and Variation Collection [#51]
+- ## softcommerce/module-plenty-item-profile [1.10.0] - **Enhancement**: Added an enhancement to accurately align the import of image sort orders with the data in the PlentyONE system. This change ensures that images maintain the correct sequence and display order based on PlentyONE’s configuration. [#44] - **Enhancement**: Introduced an enhancement to correctly remove outdated super attributes from configurable products. Previously, old configuration attributes remained in the system even after being deleted in PlentyONE, causing inconsistencies. This update ensures that any attributes removed in PlentyONE are now properly deleted and no longer remain in the system. [#43] - **Fix**: Applied a fix for TypeError: str_replace(): Argument #3 ($subject) must be of type array|string, null given in softcommerce/module-plenty-item-profile/Ui/Component/Form/PlentyAttributeOptions.php:50
+- ## softcommerce/module-plenty-item-profile [1.9.3] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-item-profile [1.9.2] - **Fix**: TypeError: SoftCommerce\PlentyItemProfile\Model\ItemExportService\Processor\Item::retrieveSkuByItemId() must be of type array, string given [#30]
+- ## softcommerce/module-plenty-item-profile [1.9.1] - **Compatibility**: Applied compatibility for profile common configuration paths [#27]
+- ## softcommerce/module-plenty-item-profile [1.9.0] - **Feature**: Introduce a feature to map product SKUs to Item and Variation IDs [#24] - **Feature**: Introduce a feature to schedule item collect process from the admin UI [#22] - **Fix**: Add a fix for duplicate client images deletion functionality [#18]
+- ## softcommerce/module-plenty-item-profile [1.8.3] - **Enhancement**: An option to configure media image export type. E.g. Images can be exported by providing either a direct URL or a base64 encoded image data. [#21] - **Enhancement**: Allow mapping properties with type scope global to attributes with type scope website/store [#20] - **Fix**: Fix massaction responsible for deleting client items externally [#19] - **Enhancement**: Add an option to resolve duplicate client images [#18]
+- ## softcommerce/module-plenty-item-profile [1.8.2] - **Feature**: Introduce compatibility with `softcommerce/magento-core` module [#17]
+
+### softcommerce/module-plenty-item-profile-schedule [1.3.2]
+- ## softcommerce/module-plenty-item-profile-schedule [1.3.1] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+
+### softcommerce/module-plenty-item-rest-api [1.3.2]
+- ## softcommerce/module-plenty-item-rest-api [1.3.1] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+
+### softcommerce/module-plenty-log [1.2.9]
+- ## softcommerce/module-plenty-log [1.2.8] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+
+### softcommerce/module-plenty-order [1.5.3]
+- ## softcommerce/module-plenty-order [1.5.2] - **Feature**: Added support for order comments, allowing comments to be stored and retrieved with order data. [#70]
+- ## softcommerce/module-plenty-order [1.5.1] - **Enhancement**: Apply Descending Sort Order to getOrdersById Interface Collection [#56]
+- ## softcommerce/module-plenty-order [1.5.0] - **Feature**: Added functionality to refresh sales order grid using CLI [#45]
+- ## softcommerce/module-plenty-order [1.4.2] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+
+### softcommerce/module-plenty-order-client [1.5.1]
+- ## softcommerce/module-plenty-order-client [1.5.0] - **Feature**: Compatibility with shipping tracking functionality [#52]
+- ## softcommerce/module-plenty-order-client [1.4.2] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-order-client [1.4.1] - **Enhancement**: Remove `stock_warehouse_dimension, stock_warehouse_location and stock_warehouse_location_details` configs from client data collection process
+
+### softcommerce/module-plenty-order-profile [1.12.1]
+- ## softcommerce/module-plenty-order-profile [1.12.0]
+- ## softcommerce/module-plenty-order-profile [1.11.1] - **Fix** Support Multiple Tracking Numbers in Order Shipping Import [#68] - **Enhancement** Ensure Sales Order Grid Reindexing for Orders Skipped by Export [#67]
+- ## softcommerce/module-plenty-order-profile [1.11.0] - **Feature**: Option to Exclude Warehouse Assignment on Order Line Items [#62]
+- ## softcommerce/module-plenty-order-profile [1.10.2] - **Fix** Ensure Customer Address Relation Is Always Assigned [#58]
+- ## softcommerce/module-plenty-order-profile [1.10.1] - **Enhancement** Added the ability to conditionally add product options to order line items based on defined rules.
+- ## softcommerce/module-plenty-order-profile [1.10.0] - **Feature**: Add Support for Exporting Shipment Tracking Information from Magento to Plenty [#52] - **Feature**: Implement Channel-Based Restrictions for Order Export Functionality [#50]
+- ## softcommerce/module-plenty-order-profile [1.9.2] - **Enhancement**: A fix has been implemented to correct VAT rate exports for order items. Previously, bundle items without a VAT reference in the Magento sales order table were mistakenly exported with a 0% VAT rate, and this update ensures the correct rate is now exported. [#49]
+- ## softcommerce/module-plenty-order-profile [1.9.1] - **Enhancement**: Optimized stock source assignment: Orders with default stock sources now reference item configuration for reservation checks, reducing resource overhead. [#48]
+- ## softcommerce/module-plenty-order-profile [1.9.0] - **Feature**: Added new feature to map PlentyONE and Magento orders using CLI [#46]
+- ## softcommerce/module-plenty-order-profile [1.8.2] - **Enhancement**: Applied a fix to resolved an issue affecting orders from third-party sales channels. These orders were getting stuck in the scheduling queue repeatedly because their status wasn’t updating properly after processing. This caused the system to attempt processing them over and over without success. The fix ensures that the status updates correctly, preventing orders from being stuck and allowing them to move through the system smoothly
+- ## softcommerce/module-plenty-order-profile [1.8.1] -- **Fix**: SourceItemRepository::getQtyPhysical(): Argument #2 ($sourceCode) must be of type string, null given, called in /../softcommerce/module-plenty-order-profile/Model/OrderImportService/Generator/Shipment.php on line 247 [#42]
+- ## softcommerce/module-plenty-order-profile [1.8.0] - **Feature**: Added an option to export product options for orders #41 - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-order-profile [1.7.6] - **Enhancement**: Improvements to shipment creation for out of stock items [#39]
+- ## softcommerce/module-plenty-order-profile [1.7.5] - **Enhancement**: Added an option to control the export of order shipping profiles [#35]
+- ## softcommerce/module-plenty-order-profile [1.7.4] - **Enhancement**: Added a functionality to handle cancelled order status synchronisation [#34]
+- ## softcommerce/module-plenty-order-profile [1.7.3] - **Enhancement**: Generate unique ID for guest customers that is required for PM contact number [#28] - **Compatibility**: Applied compatibility for profile common configuration paths [#27]
+
+### softcommerce/module-plenty-order-profile-schedule [1.3.2]
+- ## softcommerce/module-plenty-order-profile-schedule [1.3.1] - **Enhancement**: Efficient Order Export Using Status Filters [#63]
+- ## softcommerce/module-plenty-order-profile-schedule [1.3.0] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+- ## softcommerce/module-plenty-order-profile-schedule [1.2.15] - **Enhancement**: Added an interception plugin to handle order cancellation synchronisation [#34]
+- ## softcommerce/module-plenty-order-profile-schedule [1.2.14] - **Enhancement**: Added order cancel event to handle cancelled order status synchronisation [#34]
+
+### softcommerce/module-plenty-order-rest-api [1.4.1]
+- ## softcommerce/module-plenty-order-rest-api [1.4.0] - **Feature**: Compatibility with shipping tracking functionality [#52]
+- ## softcommerce/module-plenty-order-rest-api [1.3.1] - **Compatibility**: Added compatibility for PHP 8.4 and Magento 2.4.8-beta
+
+### softcommerce/module-plenty-profile [1.5.3]
+- ## softcommerce/module-plenty-profile [1.5.2] - **Enhancement**: Removed unused database schema declaration.
+- ## softcommerce/module-plenty-profile [1.5.1] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+- ## softcommerce/module-plenty-profile [1.5.0] - **Feature**: Profiles that share common configuration paths can now be saved simultaneously from any profile [#27]
+- Added release auto generation
+
+### softcommerce/module-plenty-property [1.3.9]
+- ## softcommerce/module-plenty-property [1.3.8] - **Enhancement**: Removed unused database schema declaration.
+- ## softcommerce/module-plenty-property [1.3.7] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+- ## softcommerce/module-plenty-property [1.3.6] - **Fix**: Argument #1 ($responseItem) must be of type array, string given in SoftCommerce\PlentyProperty\Profile\PropertyExportService\Processor\BatchProcessor::retrievePropertyId() [#31]
+- ## softcommerce/module-plenty-property [1.3.5] - **Enhancement**: An option to override `isGlobal` condition in `SoftCommerce\PlentyProperty\Model\AttributeToPropertyTypeMappingInterface::getPropertyTypeByAttribute`
+- ## softcommerce/module-plenty-property [1.3.4] - **Feature**: Introduce compatibility with `softcommerce/magento-core` module [#17]
+
+### softcommerce/module-plenty-property-rest-api [1.2.8]
+- ## softcommerce/module-plenty-property-rest-api [1.2.7] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+
+### softcommerce/module-plenty-rest-api [1.3.10]
+- ## softcommerce/module-plenty-rest-api [1.3.9] - **Enhancement**: Enhance Batch Request Method to Allow Grouping Responses by Resource URI [#53]
+- ## softcommerce/module-plenty-rest-api [1.3.8] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+- ## softcommerce/module-plenty-rest-api [1.3.7] - **Fix**: Argument #1 ($item) must be of type array, string given in SoftCommerce\PlentyCustomerRestApi\Model\Response\AddressDataBuilder::buildItemResponse(): [#32]
+
+### softcommerce/module-plenty-stock [1.4.3]
+- ## softcommerce/module-plenty-stock [1.4.2] - **Enhancement**: Removed unused database schema declaration.
+- ## softcommerce/module-plenty-stock [1.4.1] - **Enhancement**: Created new interface for item stock configuration that allows quick verification of stock management status. This enhancement optimizes the overall efficiency of stock management within our system. [#47]
+- ## softcommerce/module-plenty-stock [1.4.0] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+- ## softcommerce/module-plenty-stock [1.3.9] - **Enhancement**: Improvements to Order Item source selection algorithm [#38]
+- ## softcommerce/module-plenty-stock [1.3.8] - **Fix**: Too few arguments to function SoftCommerce\PlentyStock\Model\GetOrderItemSourceSelection::generateInventoryRequest() 3 passed, exactly 4 [#33]
+- ## softcommerce/module-plenty-stock [1.3.7] - **Enhancement**: Addressed minor performance improvements for `SoftCommerce\PlentyStock\Model\GetOrderItemSourceSelection::generateInventoryRequest()`
+
+### softcommerce/module-plenty-stock-client [1.2.10]
+- ## softcommerce/module-plenty-stock-client [1.2.9] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+
+### softcommerce/module-plenty-stock-profile [1.7.4]
+- ## softcommerce/module-plenty-stock-profile [1.7.3] - **Enhancement**: Minor codebase style improvements.
+- ## softcommerce/module-plenty-stock-profile [1.7.2] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+- ## softcommerce/module-plenty-stock-profile [1.7.1] - **Enhancement**: Improvements to Order Item source selection algorithm [#38]
+- ## softcommerce/module-plenty-stock-profile [1.7.0] - **Compatibility**: Applied compatibility for profile common configuration paths [#27] - **Feature**: Introduce custom Source Selection Algorithm to achieve precise NET calculation by accounting for reservations [#26]
+
+### softcommerce/module-plenty-stock-profile-schedule [1.3.1]
+- ## softcommerce/module-plenty-stock-profile-schedule [1.3.0] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+- ## softcommerce/module-plenty-stock-profile-schedule [1.2.10] - **Fix** CRITICAL: Message has been rejected: Profile ID is not set [#37]
+
+### softcommerce/module-plenty-stock-rest-api [1.2.9]
+- ## softcommerce/module-plenty-stock-rest-api [1.2.8] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+
+### softcommerce/module-profile-config [1.3.1]
+- ## softcommerce/module-profile-config [1.3.0] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+- ## softcommerce/module-profile-config [1.2.13] - **Fix**: Apply a fix where profile config scope writer saves value as array opposed to serialised data [#29]
+
+### softcommerce/module-profile-history [1.2.10]
+- ## softcommerce/module-profile-history [1.2.9] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+
+### softcommerce/module-profile-queue [1.1.3]
+- ## softcommerce/module-profile-queue [1.1.2] - **Enhancement**: Included `servicepoint` type to account for `pakshop` facility.
+
+
 # Mage2PlentyOs [1.14.0] 10 Jul 2025
 
 ### softcommerce/module-plenty-client [1.4.4]
