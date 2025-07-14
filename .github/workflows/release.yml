@@ -84,27 +84,8 @@ jobs:
             fi
           done <<< "$COMMITS"
           
-          # Update CHANGELOG.md
-          if [ -f "CHANGELOG.md" ]; then
-            # Create new changelog entry
-            echo -e "\n### Version ${VERSION}" > new_changelog_entry.md
-            [ -n "$BREAKING" ] && echo -e "$BREAKING" | sed 's/\\n$//' >> new_changelog_entry.md
-            [ -n "$FEATURES" ] && echo -e "$FEATURES" | sed 's/\\n$//' >> new_changelog_entry.md
-            [ -n "$FIXES" ] && echo -e "$FIXES" | sed 's/\\n$//' >> new_changelog_entry.md
-            [ -n "$OTHER" ] && echo -e "$OTHER" | sed 's/\\n$//' >> new_changelog_entry.md
-            
-            # Insert after the ## Changelog line
-            awk '/^## Changelog/ {print; print ""; system("cat new_changelog_entry.md"); next} 1' CHANGELOG.md > CHANGELOG.tmp
-            mv CHANGELOG.tmp CHANGELOG.md
-            rm new_changelog_entry.md
-            
-            # Commit the updated changelog
-            git config --global user.email "ci@softcommerce.com"
-            git config --global user.name "SoftCommerce CI"
-            git add CHANGELOG.md
-            git commit -m "docs: update CHANGELOG.md for v${VERSION}" || echo "No changes to commit"
-            git push origin HEAD:main || echo "Failed to push changelog update"
-          fi
+          # Skip CHANGELOG update - already done by local release process
+          echo "CHANGELOG.md already updated by release script"
           
           # Generate release notes for GitHub
           echo "## Changes" > release_notes.md
