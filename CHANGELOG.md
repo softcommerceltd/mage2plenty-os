@@ -1,6 +1,31 @@
 ## Changelog
 
 
+
+# mage2plenty-suite [1.15.0] 08 Aug 2025
+
+### softcommerce/module-plenty-client [1.5.0]
+- **Feature**: Add commands to create referrers
+
+### softcommerce/module-plenty-customer-client [1.3.0]
+- **Feature**: Improve customer data collection command
+
+### softcommerce/module-plenty-item-client [1.4.0]
+- **Feature**: Improve item data collection command
+
+### softcommerce/module-plenty-log [1.3.0]
+- **Feature**: Improve log collection and processing commands
+
+### softcommerce/module-plenty-order-client [1.6.0]
+- **Feature**: Improve order data collection command
+
+### softcommerce/module-plenty-order-profile [1.13.0]
+- **Feature**: Add commands to delete orders and payments
+
+### softcommerce/module-plenty-stock-client [1.3.0]
+- **Feature**: Improve stock data collection command
+
+
 # mage2plenty-suite [1.14.1] 14 Jul 2025
 
 ### softcommerce/module-plenty-attribute [1.5.3]
