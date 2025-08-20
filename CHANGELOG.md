@@ -2,6 +2,16 @@
 
 
 
+
+# mage2plenty-suite [1.15.1] 20 Aug 2025
+
+### softcommerce/module-plenty-order-profile [1.13.1]
+- **Fix**: improve error messages for warehouse mapping issues
+
+### softcommerce/module-plenty-stock-profile [1.7.6]
+- **Fix**: resolve one-to-many warehouse mapping for multi-warehouse shipments
+
+
 # mage2plenty-suite [1.15.0] 08 Aug 2025
 
 ### softcommerce/module-plenty-client [1.5.0]
