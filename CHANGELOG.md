@@ -3,6 +3,19 @@
 
 
 
+
+# mage2plenty-suite [2.0.0] 07 Nov 2025
+
+### softcommerce/module-profile-queue [2.0.0]
+- **BREAKING CHANGE**: feat!: add PHP 8.3/8.4 compatibility and modernize queue module
+- Merge dev-v2.0.0 into master for v2.0.0 release
+
+### softcommerce/module-profile-schedule [2.0.0]
+- **BREAKING CHANGE**: feat!: upgrade to PHP 8.1+ with comprehensive modernization
+- **BREAKING CHANGE**: feat!: add PHP 8.3/8.4 compatibility and modernize schedule module
+- **Feature**: add comprehensive cron schedule monitoring UI
+
+
 # mage2plenty-suite [1.15.1] 20 Aug 2025
 
 ### softcommerce/module-plenty-order-profile [1.13.1]
