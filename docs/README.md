@@ -4,7 +4,8 @@ Technical documentation for the Mage2Plenty connector - a bi-directional integra
 
 ## Features
 
-- [Stock Synchronization](features/stock-synchronization.md) - How inventory sync works between systems
+- [Stock Synchronization](../../../modules/module-plenty-stock-profile/docs/stock-synchronization.md) - How inventory sync works between systems
+- [Order Management](../../../modules/module-plenty-order-profile/docs/ORDER_MANAGEMENT.md) - Bi-directional order synchronization
 
 ## Quick Links
 
