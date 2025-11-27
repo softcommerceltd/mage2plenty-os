@@ -31,6 +31,9 @@
 ### softcommerce/module-plenty-item [2.0.1]
 - **Fix**: remove typed class constants for PHP 8.1/8.2 compatibility
 
+### softcommerce/module-plenty-item-profile [2.0.1]
+- **Fix**: remove typed class constants for PHP 8.1/8.2 compatibility
+
 ### softcommerce/module-plenty-log [2.0.1]
 - **Fix**: remove typed class constants for PHP 8.1/8.2 compatibility
 
