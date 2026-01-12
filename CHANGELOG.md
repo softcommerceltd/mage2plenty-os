@@ -4,6 +4,40 @@
 
 
 
+
+# mage2plenty-suite [2.3.0] 12 Jan 2026
+
+### softcommerce/module-core [2.2.0]
+- **Feature**: add MediaChecksumComputeService and memory reset for MediaManagement
+
+### softcommerce/module-plenty-category [2.2.0]
+- **Feature**: add getDefaultName method to Category and improve CategoryIdCache
+
+### softcommerce/module-plenty-category-profile [2.0.2]
+- **Fix**: use getDefaultName for category path resolution
+
+### softcommerce/module-plenty-client [2.1.0]
+- **Feature**: add Tag management system for PlentyONE tags
+
+### softcommerce/module-plenty-item [2.2.0]
+- **Feature**: add ItemDataProvider, VariationDataProvider and batch response handling
+
+### softcommerce/module-plenty-item-profile [2.1.0]
+- **Feature**: add product export infrastructure and image checksum computation
+
+### softcommerce/module-plenty-order-profile [2.3.0]
+- **Feature**: add order tag management and enhance export configuration
+
+### softcommerce/module-plenty-profile [2.1.0]
+- **Feature**: add TagOptions UI component and comprehensive documentation
+
+### softcommerce/module-plenty-property [2.0.2]
+- **Fix**: improve FlushData controller to properly delete property data
+
+### softcommerce/module-profile-schedule [2.0.2]
+- **Fix**: add missing model property declaration in Save controller
+
+
 # mage2plenty-suite [2.2.0] 19 Dec 2025
 
 ### softcommerce/module-core [2.1.0]
