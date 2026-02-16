@@ -5,6 +5,67 @@
 
 
 
+
+# mage2plenty-suite [3.0.0] 16 Feb 2026
+
+### softcommerce/module-core [2.3.0]
+- **Feature**: add email notification service for admin alerts
+- **Fix**: remove @media-common guard from adminhtml LESS
+
+### softcommerce/module-plenty-attribute [2.0.2]
+- **Fix**: save attribute data immediately after export to PlentyONE
+
+### softcommerce/module-plenty-client [2.1.1]
+- **Fix**: update setup command default timeouts to match API client defaults
+- **Fix**: set sensible default API timeouts instead of unlimited
+
+### softcommerce/module-plenty-item [2.3.0]
+- **Feature**: add selective cache removal and dimension field mapping to data providers
+- **Feature**: add "Select All" support for product export queue admin grid
+- **Feature**: resolve parent configurable products when adding children to export queue
+- **Feature**: add plenty_item_id and plenty_variation_id to configurable product variations grid
+- **Fix**: disable broken export row action in queue listing
+- **Fix**: correct shipping profile query filter and code style
+- **Fix**: resolve order import failure when custom attribute mapping is enabled
+
+### softcommerce/module-plenty-item-profile [3.0.0]
+- **BREAKING CHANGE**: feat!: redesign product export with command-based architecture
+- **Fix**: align CLI progress bar with export service callback events
+- **Fix**: use existing Magento SKU when product found during custom attribute mapping
+
+### softcommerce/module-plenty-order [2.0.4]
+- **Fix**: resolve incorrect null return for zero quantity in order item model
+
+### softcommerce/module-plenty-order-profile [2.4.0]
+- **Feature**: add configurable retry limits and email notifications for failed order exports
+- **Feature**: add partial amount refund and shipping support for credit memo import
+- **Feature**: add sales_order duplicate detection to detect-duplicates command
+- **Fix**: correct label typo in creditmemo order status field
+- **Fix**: require credit note order type as prerequisite for creditmemo creation
+- **Fix**: always aggregate batch messages and clean up memory during order import
+- **Fix**: remove unreliable external order lookup on export failure
+- **Fix**: resolve order export infinite loop caused by SearchCriteria caching
+- **Fix**: use null-safe operator for customer extension attributes
+- **Fix**: return null early when shipping package ID is zero
+- **Fix**: add validation to prevent duplicate plenty_order_id assignment
+
+### softcommerce/module-plenty-profile [2.1.1]
+- **Fix**: improve system property setup command output and status tracking
+
+### softcommerce/module-plenty-property [2.0.3]
+- **Fix**: skip redundant property group export when groups already exist
+- **Fix**: save property data immediately after export for product export availability
+
+### softcommerce/module-plenty-stock-profile [2.0.4]
+- **Fix**: remove @media-common guard from adminhtml LESS
+
+### softcommerce/module-profile [3.0.3]
+- **Fix**: remove @media-common guard from adminhtml LESS
+
+### softcommerce/module-profile-notification [2.0.1]
+- **Fix**: remove @media-common guard from adminhtml LESS
+
+
 # mage2plenty-suite [2.3.0] 12 Jan 2026
 
 ### softcommerce/module-core [2.2.0]
