@@ -6,6 +6,13 @@
 
 
 
+
+# mage2plenty-suite [3.0.1] 16 Feb 2026
+
+### softcommerce/module-plenty-item-profile [3.0.1]
+- **Fix**: skip new non-visible child products from export queue in observer
+
+
 # mage2plenty-suite [3.0.0] 16 Feb 2026
 
 ### softcommerce/module-core [2.3.0]
