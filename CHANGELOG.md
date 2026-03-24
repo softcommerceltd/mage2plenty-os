@@ -1,11 +1,45 @@
 ## Changelog
 
 
+# mage2plenty-suite [3.2.0] 24 Mar 2026
 
+### softcommerce/module-plenty-attribute [2.0.4]
+- **Performance**: add sleep interval to message queue consumers
 
+### softcommerce/module-plenty-client [2.1.3]
+- **Fix**: exclude request payload from API error logs unless verbose mode is enabled
 
+### softcommerce/module-plenty-item-profile [3.1.0]
+- **Feature**: auto-create missing attribute values and skip variations with unresolved values
+- **Feature**: move media checksum computation to async message queue handler
+- **Fix**: inject variationId into dedicated endpoint payload items
+- **Fix**: surface batch execution errors to CLI and UI via message collector
+- **Fix**: prevent memory leak in retry registry and harden SKU availability check
+- **Fix**: add circuit breaker to prevent infinite relation link reprocessing loop
+- **Fix**: allow post-processors to save error results when SKU is available
+- **Performance**: add sleep interval to item collect queue consumer
 
+### softcommerce/module-plenty-order-profile [2.4.2]
+- **Fix**: prevent cancellation of orders with existing credit notes in PlentyONE
+- **Fix**: resolve creditmemo not created for canceled orders with status condition
+- **Performance**: add sleep interval to order collect queue consumer
 
+### softcommerce/module-plenty-profile [2.2.0]
+- **Feature**: add agnostic action handler pool for setup message queue consumer
+- **Fix**: add missing composer dependency on module-profile-notification
+- **Performance**: add sleep interval to setup queue consumers
+
+### softcommerce/module-plenty-property [2.0.5]
+- **Performance**: add sleep interval to message queue consumers
+
+### softcommerce/module-plenty-stock-profile [2.0.6]
+- **Performance**: add sleep interval to stock reservation queue consumer
+
+### softcommerce/module-profile-notification [2.1.1]
+- **Fix**: improve notification not found error message with ID context
+- **Fix**: resolve MySQL Error 1093 in notification cleanup batch delete
+- **Fix**: respect "Enable Notifications" config toggle for all write operations
+- **Fix**: resolve notification table bloat causing disk exhaustion and cleanup failure
 
 
 # mage2plenty-suite [3.1.0] 13 Mar 2026
