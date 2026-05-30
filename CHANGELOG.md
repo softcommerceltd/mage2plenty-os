@@ -1,6 +1,25 @@
 ## Changelog
 
 
+
+# mage2plenty-suite [3.6.0] 30 May 2026
+
+### softcommerce/module-plenty-customer-profile [2.1.3]
+- **Fix**: disable gc_collect_cycles in customer service batch cleanup
+
+### softcommerce/module-plenty-item-profile [3.4.1]
+- **Fix**: disable gc_collect_cycles in item import batch cleanup
+
+### softcommerce/module-plenty-stock [2.2.0]
+- **Feature**: explicit --all / --older-than flags on stock export queue CLI
+- **Feature**: stock export queue + Plenty booking endpoints for delta corrections
+
+### softcommerce/module-plenty-stock-profile [2.3.0]
+- **Feature**: delta correction mode with channel-safe bootstrap policies
+- **Feature**: stock export queue producers, MQ consumer, cron, and drift reconciler
+- **Fix**: persist processed_at and per-SKU status in stock export SaveEntity
+
+
 # mage2plenty-suite [3.5.0] 20 May 2026
 
 ### softcommerce/module-plenty-item-profile [3.4.0]
