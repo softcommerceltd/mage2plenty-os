@@ -2,6 +2,21 @@
 
 
 
+
+# mage2plenty-suite [3.7.0] 05 Jun 2026
+
+### softcommerce/module-plenty-order [2.2.0]
+- **Feature**: add order property type management helper
+- **Feature**: add order tag constants to REST API interface
+
+### softcommerce/module-plenty-order-profile [2.5.1]
+- **Fix**: normalize order import payment method code to lowercase
+- **Fix**: fall back to line-item shipping profile on order import
+
+### softcommerce/module-plenty-stock [2.2.1]
+- **Fix**: correct sprintf format specifier in book incoming items URL
+
+
 # mage2plenty-suite [3.6.0] 30 May 2026
 
 ### softcommerce/module-plenty-customer-profile [2.1.3]
