@@ -15,16 +15,16 @@
         "softcommerce/module-plenty-item-profile": "3.4.1",
         "softcommerce/module-plenty-log": "2.0.2",
         "softcommerce/module-plenty-order": "2.2.0",
-        "softcommerce/module-plenty-order-profile": "2.5.1",
+        "softcommerce/module-plenty-order-profile": "2.6.0",
         "softcommerce/module-plenty-profile": "2.2.1",
         "softcommerce/module-plenty-property": "2.0.5",
         "softcommerce/module-plenty-stock": "2.2.1",
-        "softcommerce/module-plenty-stock-profile": "2.3.0",
+        "softcommerce/module-plenty-stock-profile": "2.4.0",
         "softcommerce/module-profile": "3.0.5",
         "softcommerce/module-profile-history": "2.0.1",
         "softcommerce/module-profile-notification": "2.1.2",
         "softcommerce/module-profile-queue": "2.0.1",
         "softcommerce/module-profile-schedule": "2.0.3"
     },
-    "version": "3.7.0"
+    "version": "3.8.0"
 }

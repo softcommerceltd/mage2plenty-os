@@ -3,6 +3,19 @@
 
 
 
+
+# mage2plenty-suite [3.8.0] 08 Jun 2026
+
+### softcommerce/module-plenty-order-profile [2.6.0]
+- **Feature**: gate PlentyONE-imported payments to offline capture
+- **Fix**: fall back to order item properties for shipping profile ID
+
+### softcommerce/module-plenty-stock-profile [2.4.0]
+- **Feature**: skip stock import for products with Manage Stock disabled
+- **Fix**: log and skip unsupported stock types in source assignment
+- **Performance**: add sku index to inventory_reservation table
+
+
 # mage2plenty-suite [3.7.0] 05 Jun 2026
 
 ### softcommerce/module-plenty-order [2.2.0]
