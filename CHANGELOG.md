@@ -4,6 +4,18 @@
 
 
 
+
+# mage2plenty-suite [3.9.0] 11 Jun 2026
+
+### softcommerce/module-plenty-order-profile [2.7.0]
+- **Feature**: add configurable new-order email gate for order import
+- **Feature**: defer order export until settling period elapses to avoid unpaid sync
+- **Fix**: inject order-profile schedule config factory so settling-period guard engages
+
+### softcommerce/module-plenty-stock-profile [2.5.0]
+- **Feature**: add plenty:stock:location:correct CLI to drain orphaned storage-location stock
+
+
 # mage2plenty-suite [3.8.0] 08 Jun 2026
 
 ### softcommerce/module-plenty-order-profile [2.6.0]
