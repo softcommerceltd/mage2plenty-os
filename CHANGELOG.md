@@ -5,6 +5,61 @@
 
 
 
+
+# mage2plenty-suite [3.10.0] 17 Jun 2026
+
+### softcommerce/module-core [2.5.0]
+- **Feature**: add BatchPurgeTrait for batched DB cleanup
+- **Fix**: bind DomainManagerInterface so image import works without Magento_Downloadable
+
+### softcommerce/module-plenty-attribute [2.0.5]
+- **Performance**: index collected_at on attribute mirror tables
+
+### softcommerce/module-plenty-category [2.2.3]
+- **Performance**: index collected_at on category mirror table
+
+### softcommerce/module-plenty-client [2.1.5]
+- **Performance**: index collected_at on client config table
+
+### softcommerce/module-plenty-customer [2.1.4]
+- **Performance**: index collected_at on customer mirror tables
+
+### softcommerce/module-plenty-item [2.4.3]
+- **Performance**: index collected_at on item mirror tables
+
+### softcommerce/module-plenty-item-profile [3.5.0]
+- **Feature**: add Magento-deleted item orphan cleanup cron
+- **Fix**: guard null manufacturer country id in attribute import
+
+### softcommerce/module-plenty-log [2.0.3]
+- **Performance**: index collected_at on log table
+
+### softcommerce/module-plenty-order [2.2.1]
+- **Performance**: index collected_at on order mirror table
+
+### softcommerce/module-plenty-profile [2.2.2]
+- **Performance**: limit GetLastCollectedAt watermark query to a single row
+
+### softcommerce/module-plenty-property [2.0.6]
+- **Performance**: index collected_at on property mirror tables
+
+### softcommerce/module-plenty-stock [2.2.2]
+- **Fix**: prevent plenty_stock_export_queue deadlocks and gate enqueue on schedule
+- **Performance**: index collected_at on stock mirror table
+
+### softcommerce/module-plenty-stock-profile [2.6.0]
+- **Feature**: add stock drift detection, reporting and orphan cleanup
+
+### softcommerce/module-profile-history [2.0.2]
+- **Fix**: batch profile history cleanup and index created_at
+
+### softcommerce/module-profile-notification [2.2.0]
+- **Feature**: add stock physical-drift report email
+
+### softcommerce/module-profile-queue [2.0.2]
+- **Fix**: batch profile queue cleanup
+
+
 # mage2plenty-suite [3.9.0] 11 Jun 2026
 
 ### softcommerce/module-plenty-order-profile [2.7.0]
