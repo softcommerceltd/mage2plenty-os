@@ -6,6 +6,27 @@
 
 
 
+
+# mage2plenty-suite [3.11.0] 18 Jun 2026
+
+### softcommerce/module-plenty-client [2.1.6]
+- **Fix**: skip null language in getLocaleLanguages to fix property group export
+
+### softcommerce/module-plenty-item-profile [3.5.1]
+- **Fix**: make item mapping CLI Adobe Commerce staging aware
+
+### softcommerce/module-plenty-order [2.3.0]
+- **Feature**: export Magento bundle orders to PlentyONE as linked sets
+
+### softcommerce/module-plenty-order-profile [2.8.0]
+- **Feature**: default Export Bundle Components to enabled
+- **Feature**: export Magento bundle orders to PlentyONE as linked sets
+- **Feature**: import PlentyONE bundle orders as Magento bundle products
+
+### softcommerce/module-plenty-stock-profile [2.6.1]
+- **Fix**: make stock mapping CLI Adobe Commerce staging aware
+
+
 # mage2plenty-suite [3.10.0] 17 Jun 2026
 
 ### softcommerce/module-core [2.5.0]
