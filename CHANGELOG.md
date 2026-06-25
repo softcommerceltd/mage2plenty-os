@@ -7,6 +7,25 @@
 
 
 
+
+# mage2plenty-suite [3.12.0] 25 Jun 2026
+
+### softcommerce/module-core [2.5.1]
+- **Fix**: prevent duplicate attribute options via normalized label matching
+
+### softcommerce/module-plenty-attribute [2.0.6]
+- **Fix**: preserve PlentyONE manufacturer name casing on import
+
+### softcommerce/module-plenty-item-profile [3.6.0]
+- **Feature**: scheduled & on-demand product mapping, plus import fixes
+
+### softcommerce/module-plenty-order-profile [2.9.0]
+- **Feature**: gate order import by PlentyONE status and creation date
+- **Fix**: drop product-alert backend model from cron schedule fields
+- **Fix**: persist imported order properties via saveAttribute
+- **Fix**: use quote store for product MSI stock check on order import
+
+
 # mage2plenty-suite [3.11.0] 18 Jun 2026
 
 ### softcommerce/module-plenty-client [2.1.6]
