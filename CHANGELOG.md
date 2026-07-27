@@ -8,6 +8,39 @@
 
 
 
+
+# mage2plenty-suite [3.13.0] 27 Jul 2026
+
+### softcommerce/module-core [2.6.0]
+- **Feature**: add DEFERRED status for order import deferral
+- **Fix**: rebrand admin menu and configuration tab from Soft Commerce to Byte8
+
+### softcommerce/module-plenty-item-profile [3.6.1]
+- **Fix**: skip empty external_id in item mapping integrity check
+
+### softcommerce/module-plenty-order [2.4.0]
+- **Feature**: add external order ID column to plenty order listing grid
+- **Feature**: add channel description tooltip to sales order grid
+- **Feature**: allow UpdateSalesOrderStatus to stamp plenty_sales_channel
+- **Feature**: preserve original external order id in plenty_order_entity
+- **Feature**: add order metadata column for deferred-retry sync
+- **Fix**: return literal 0 from Order::getReferrerId for manual-entry channel
+- **Fix**: render manual-entry channel 0 in order grid sales channel column
+
+### softcommerce/module-plenty-order-profile [2.10.0]
+- **Feature**: flip plenty_sales_channel to exported referrer on order export
+- **Feature**: preserve original external order id in plenty_order_entity
+- **Feature**: defer order import documents on transient Magento blockers
+- **Fix**: keep real sales channel through export gate and order import
+- **Fix**: pin increment_id to Magento increment once order is linked
+- **Fix**: save plenty_order_entity.increment_id on order import create path
+- **Fix**: allow channel 0 (manual entry) and -2 orders through export channel filter
+- **Fix**: prevent duplicate PlentyONE orders via external-id idempotency search on retry
+
+### softcommerce/module-plenty-stock-profile [2.6.2]
+- **Fix**: exclude Manage-Stock-disabled SKUs from stock drift detection
+
+
 # mage2plenty-suite [3.12.0] 25 Jun 2026
 
 ### softcommerce/module-core [2.5.1]
