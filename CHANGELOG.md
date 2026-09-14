@@ -9,6 +9,37 @@
 
 
 
+
+# mage2plenty-suite [3.14.0] 14 Sept 2026
+
+### softcommerce/module-core [2.7.0]
+- **Feature**: add per-entity overall status resolution to MessageCollector
+
+### softcommerce/module-plenty-client [2.1.7]
+- **Fix**: fall back to credential login when token refresh fails with HTTP 400
+
+### softcommerce/module-plenty-item-profile [3.6.2]
+- **Fix**: collect manufacturers using their own watermark
+
+### softcommerce/module-plenty-order-profile [2.11.0]
+- **Feature**: add --no-force option to plenty:order:export
+- **Fix**: ship delivery-order lines without warehouse via reservation fallback
+- **Fix**: guard already-exported orders against address re-export churn
+- **Fix**: bypass order-settling deferral for admin-triggered order exports
+- **Fix**: match PO order line by SKU when variation lookup fails on import
+- **Fix**: cap credit memo shipping refund to Magento refundable shipping
+- **Fix**: stop re-inserting shipment tracking numbers on import
+- **Fix**: skip unsupported and unresolvable orders on import
+- **Fix**: assign order import status per-order to prevent batch contamination
+
+### softcommerce/module-plenty-stock-profile [2.7.0]
+- **Feature**: add stock-status reconciliation (indexed status vs actual salability)
+- **Fix**: aggregate reservation qty in stock-status reconcile detection query
+- **Fix**: make stock-consistency queries table-prefix aware
+- **Fix**: heal derived stock-status drift stranded by qty-unchanged skip guard
+- **Fix**: ignore phantom stock drift where Magento floors at 0 vs negative Plenty
+
+
 # mage2plenty-suite [3.13.0] 27 Jul 2026
 
 ### softcommerce/module-core [2.6.0]
