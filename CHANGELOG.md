@@ -10,6 +10,23 @@
 
 
 
+
+# mage2plenty-suite [3.15.0] 24 Sept 2026
+
+### softcommerce/module-plenty-client [2.1.8]
+- **Fix**: honour Retry-After and treat HTTP 429 as throttling on retry
+
+### softcommerce/module-plenty-item-profile [3.7.0]
+- **Feature**: clear removed sales price on product import
+
+### softcommerce/module-plenty-order-profile [2.11.1]
+- **Fix**: drop conflicting verbose option from plenty:order:validate
+- **Fix**: prevent order collect "Invalid data for insert" on mixed externalOrderId batch
+
+### softcommerce/module-plenty-profile [2.2.3]
+- **Fix**: drop conflicting verbose option from plenty:profile:status
+
+
 # mage2plenty-suite [3.14.0] 14 Sept 2026
 
 ### softcommerce/module-core [2.7.0]
