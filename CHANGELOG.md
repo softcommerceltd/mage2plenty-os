@@ -11,6 +11,13 @@
 
 
 
+
+# mage2plenty-suite [3.15.1] 29 Sept 2026
+
+### softcommerce/module-plenty-item-profile [3.7.1]
+- **Fix**: define isForceUpdate() on item-import service context
+
+
 # mage2plenty-suite [3.15.0] 24 Sept 2026
 
 ### softcommerce/module-plenty-client [2.1.8]
