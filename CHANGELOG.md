@@ -12,6 +12,87 @@
 
 
 
+
+# mage2plenty-suite [3.16.0] 16 Nov 2026
+
+### softcommerce/module-core [2.7.1]
+- **Fix**: skip non-numeric option ids in normalized attribute option index
+- **Fix**: show an entity's error in the console summary line
+
+### softcommerce/module-plenty-attribute [2.0.7]
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-plenty-category [2.2.4]
+- **Fix**: read the exported category id from the column the category export writes
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-plenty-client [2.1.9]
+- **Fix**: fall back to credential login when refresh issues scope-less tokens
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-plenty-customer [2.1.5]
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-plenty-item [2.5.0]
+- **Feature**: expose stored product visibility on the product data registry
+- **Feature**: expose store-level url_key overrides on the product data registry
+- **Fix**: stop item export looping on existing products, rate limits and untouched queue rows
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-plenty-item-profile [3.8.0]
+- **Feature**: keep localized child names for stores a name property does not translate
+- **Feature**: localize child product names per store view with Magento option label fallback
+- **Feature**: keep store-level url key and rewrites when a store gets no key from the import
+- **Feature**: check url key collisions against url_rewrite, per store view
+- **Fix**: reset the stock item and bundle option title caches at every item import batch boundary
+- **Fix**: reset reserved url keys at every item import batch boundary
+- **Fix**: unwrap nested request visibility values fully when resolving effective visibility
+- **Fix**: resolve url rewrite visibility from the value the import persists
+- **Fix**: append option values to generated child names without reordering the variation name
+- **Fix**: mark a product with any failed batch as error instead of warning
+- **Fix**: stop item export looping on existing products, rate limits and untouched queue rows
+- **Fix**: stop url rewrite conflict retry deleting live product rewrites
+- **Fix**: defer category-product and stock indexers to schedule mode
+- **Fix**: stop item import force-reindexing unchanged products
+
+### softcommerce/module-plenty-log [2.0.4]
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-plenty-order [2.4.1]
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-plenty-order-profile [2.11.2]
+- **Fix**: queue large admin mass exports instead of running them in the request
+- **Fix**: harden order export against paging loops, rate limits and repeated cancellations
+- **Fix**: reset order repository registry after processor failure and defer shipment on unsaved order state
+- **Fix**: restore order to persisted state after processor failure and defer failed captures
+- **Fix**: do not let a run error mask DEFERRED marking of retryable documents
+
+### softcommerce/module-plenty-property [2.0.7]
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-plenty-stock [2.2.3]
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-plenty-stock-profile [2.7.1]
+- **Fix**: stop stock export queue metadata growing unbounded
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-profile [3.1.0]
+- **Feature**: add BatchResetInterface for services that accumulate per-batch state
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-profile-history [2.0.3]
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-profile-queue [2.0.3]
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+### softcommerce/module-profile-schedule [2.0.5]
+- **Fix**: compare full timestamp in canRunOnetimeProcess
+- **Performance**: suppress frontend cache identities on backend-only entities
+
+
 # mage2plenty-suite [3.15.1] 29 Sept 2026
 
 ### softcommerce/module-plenty-item-profile [3.7.1]
